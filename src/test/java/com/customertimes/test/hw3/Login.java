@@ -5,13 +5,13 @@ public class Login {
     private String emailXpath = "//input[@name='email']";
     private String passwordCss = "[name=password]";
     private String passwordXpath = "//input[@name='password']";
-    private String buttonToDisplayHidePasswordCSS = "[button.mat-focus-indicator.mat-tooltip-trigger.mat-icon-button.mat-button-base.ng-star-inserted]";
-    private String buttonToDisplayHidePasswordXpath = "//*[contains(concat(' ', normalize-space(@class), ' '), 'mat-focus-indicator mat-tooltip-trigger mat-icon-button mat-button-base ng-star-inserted')]";
+    private String buttonToDisplayHidePasswordCSS = "#login-form mat-form-field div div div button";
+    private String buttonToDisplayHidePasswordXpath = "//*[@id='login-form']/mat-form-field[2]/div/div/div/button";
     private String forgotPasswordCSS = "a[href*=forgot-password]";
     private String forgotPasswordXpath = "//a[@href='#/forgot-password']";
     private String loginButtonCss = "[id=loginButton]";
     private String loginButtonXpath = "//button[@id='loginButton']";
-    private String rememberMeCSS = "[id=rememberMe]";
+    private String rememberMeCSS = "[#rememberMe]";
     private String rememberMeXpath = "//mat-checkbox[@id='rememberMe']";
     private String notYetACustomerCSS = "div#newCustomerLink a";
     private String notYetACustomerXpath = "//*[@id='newCustomerLink']/a";

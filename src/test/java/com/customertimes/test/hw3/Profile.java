@@ -14,5 +14,5 @@ public class Profile {
     private String imageUrlCSS = "[name=imageUrl]";
     private String imageUrlXpath = "//input[@name='imageUrl']";
     private String linkImageCSS = "form[action$=url] div.form-group + button";
-    private String linkImageXpath = "//*[contains(concat(' ', normalize-space(@class), ' '), 'mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone')]/form[2]/button";
+    private String linkImageXpath = "//*[contains(@action, 'url')]/button";
 }
