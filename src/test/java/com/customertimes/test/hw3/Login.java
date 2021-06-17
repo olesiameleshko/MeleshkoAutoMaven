@@ -5,8 +5,8 @@ public class Login {
     private String emailXpath = "//input[@name='email']";
     private String passwordCss = "[name=password]";
     private String passwordXpath = "//input[@name='password']";
-    private String buttonToDisplayHidePasswordCSS = "#login-form mat-form-field div div div button";
-    private String buttonToDisplayHidePasswordXpath = "//*[@id='login-form']/mat-form-field[2]/div/div/div/button";
+    private String buttonToDisplayHidePasswordCSS = "#login-form [aria-label~=Eye]";
+    private String buttonToDisplayHidePasswordXpath = "//*[@id='login-form']//*[contains(@aria-label, 'Eye')]";
     private String forgotPasswordCSS = "a[href*=forgot-password]";
     private String forgotPasswordXpath = "//a[@href='#/forgot-password']";
     private String loginButtonCss = "[id=loginButton]";

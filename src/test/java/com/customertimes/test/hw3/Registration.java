@@ -14,7 +14,7 @@ public class Registration {
     private String answerCSS = "input[data-placeholder^='Answer to your security']";
     private String answerXpath = "//input[starts-with(@data-placeholder, 'Answer to your security')]";
     private String registerButtonCSS = "button[aria-label$=registration]";
-    private String registerButtonXpath = "//button[substring(@aria-label, string-length(@aria-label)-string-length('registration') + 1)='registration']";
+    private String registerButtonXpath = "//button[contains(@aria-label, 'registration')]";
     private String alreadyACustomerCSS = "[id=alreadyACustomerLink]";
     private String alreadyACustomerXpath = "//*[@id='alreadyACustomerLink']";
 }
