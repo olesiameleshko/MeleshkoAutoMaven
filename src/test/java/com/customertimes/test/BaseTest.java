@@ -9,7 +9,7 @@ public class BaseTest {
     protected WebDriver driver;
 
     @BeforeSuite
-    public void setup(){
+    public void setup() throws InterruptedException {
         driver = WebdriverRunner.getWebDriver();
         System.out.println("The driver is opened");
     }

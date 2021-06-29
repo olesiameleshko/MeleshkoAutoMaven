@@ -43,7 +43,7 @@ public class WebdriverRunner {
     }
     public static void closeWebDriver(){
         if (driver != null); {
-            driver.close();
+            driver.quit();
         }
     }
 }
