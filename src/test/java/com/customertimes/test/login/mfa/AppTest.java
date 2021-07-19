@@ -3,6 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import java.io.File;
+import java.util.concurrent.TimeUnit;
+
 //Lesson 1
 public class AppTest {
 
@@ -12,13 +14,8 @@ public class AppTest {
         System.setProperty("webdriver.chrome.driver", separator + "Program Files" + "chromedriver_win32" + "chromedriver" + "bin");
         WebDriver driver = new ChromeDriver();
         driver.get("https://customertimes.com");
-        try {
-            Thread.sleep(15_000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.close();
         System.out.println("Hello Maven");
-
     }
 }

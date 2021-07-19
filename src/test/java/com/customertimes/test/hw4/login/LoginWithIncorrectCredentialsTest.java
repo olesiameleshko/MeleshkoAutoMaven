@@ -29,7 +29,7 @@ public class LoginWithIncorrectCredentialsTest extends BaseTest {
     }
 
     @Test
-    public void userCannotUseIncorrectCredentials() throws InterruptedException {
+    public void userCannotUseIncorrectCredentials() {
         getWebDriver().findElement(By.id("navbarAccount")).click();
         getWebDriver().findElement(By.id("navbarLoginButton")).click();
 

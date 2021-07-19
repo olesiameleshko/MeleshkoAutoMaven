@@ -13,7 +13,7 @@ import static com.customertimes.framework.driver.WebdriverRunner.getWebDriver;
 
 public class RegistrationTest extends BaseTest {
 
-    String userMailReg = "omeleshko27@gmail.com";
+    String userMailReg = "omeleshko28@gmail.com";
     String passwordReg = "22334455Le+";
     String answerReg = "Crime and Punishment";
     WebDriverWait wait;
@@ -52,6 +52,7 @@ public class RegistrationTest extends BaseTest {
 
         WebElement securityQuestionDropDown = getWebDriver().findElement(By.cssSelector(".mat-select[role='combobox']"));
         securityQuestionDropDown.click();
+
         getWebDriver().findElement(By.cssSelector(".mat-option[id='mat-option-13']")).click();
 
         getWebDriver().findElement(By.id("securityAnswerControl")).clear();

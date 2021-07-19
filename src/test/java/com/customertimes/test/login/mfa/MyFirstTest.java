@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 
 public class MyFirstTest extends BaseTest {
@@ -13,11 +14,8 @@ public class MyFirstTest extends BaseTest {
     public void checkSiteTitle()
     {
         driver.get("https://google.com");
-        try {
-            Thread.sleep(4_000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+
         String expectedTitle = "Google";
         String actualTitle = driver.getTitle();
 
