@@ -42,5 +42,6 @@ public class ProductInfoTest extends BaseTest {
         softassert.assertEquals(actualDescription, expectedDescription, "The description doesn't match");
         String actualPrice = getWebDriver().findElement(By.cssSelector(".mat-dialog-content p:only-child")).getText();
         softassert.assertEquals(actualPrice, expectedPrice, "The price doesn't match");
+        softassert.assertAll();
     }
 }
