@@ -1,65 +1,43 @@
 package com.customertimes.test.hw5;
 
-import com.customertimes.framework.driver.WebdriverRunner;
+import com.customertimes.framework.pages.AllProductsPage;
+import com.customertimes.framework.pages.LoginPage;
+import com.customertimes.model.Customer;
+import com.customertimes.test.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static com.customertimes.framework.driver.WebdriverRunner.getWebDriver;
+public class NoAbilityToAddSoldOutProductTest extends BaseTest {
 
-public class NoAbilityToAddSoldOutProductTest {
-    String userMail = "omeleshko28@gmail.com";
-    String password = "22334455Le+";
     WebDriverWait wait;
+    LoginPage loginPage;
+    Customer customer;
+    AllProductsPage allProductsPage;
     String expectedSoldOutMessage = "We are out of stock! Sorry for the inconvenience.";
 
     @BeforeClass
     public void setup() throws InterruptedException {
-        getWebDriver().get("http://localhost:3000/#/");
-        getWebDriver().findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        wait = new WebDriverWait(getWebDriver(), 5);
-    }
-
-    @AfterClass
-    public void turnDown() {
-
-        WebdriverRunner.closeWebDriver();
+        driver.get("http://localhost:3000/#/");
+        driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
+        wait = new WebDriverWait(driver, 5);
+        customer = Customer.newBuilder().withName("omeleshko45@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
+        loginPage = new LoginPage(driver);
+        allProductsPage = new AllProductsPage(driver);
     }
 
     @Test
-    public void userCannotAddSoldOutProductToBasket() throws InterruptedException {
-        getWebDriver().findElement(By.id("navbarAccount")).click();
-        getWebDriver().findElement(By.id("navbarLoginButton")).click();
+    public void userCannotAddSoldOutProductToBasket() {
+        loginPage.loginAs(customer);
+        loginPage.clickOnForcePageReloadButton();
 
-        getWebDriver().findElement(By.cssSelector("simple-snack-bar .mat-button-wrapper")).click();
+        allProductsPage.dismissCookieMessage();
+        allProductsPage.navigateToNextPageUsingScroll();
+        allProductsPage.addToBasketSoldOutProduct();
 
-        getWebDriver().findElement(By.id("email")).clear();
-        getWebDriver().findElement(By.id("email")).sendKeys(userMail);
-
-        getWebDriver().findElement(By.id("password")).clear();
-        getWebDriver().findElement(By.id("password")).sendKeys(password);
-
-        getWebDriver().findElement(By.id("loginButton")).click();
-
-        JavascriptExecutor js = (JavascriptExecutor) getWebDriver();
-        getWebDriver().findElement(By.cssSelector("a[aria-label='dismiss cookie message']")).click();
-        WebElement element = getWebDriver().findElement(By.cssSelector("button[aria-label='Next page']"));
-        wait.until(ExpectedConditions.visibilityOf(element));
-        js.executeScript("arguments[0].scrollIntoView();", element);
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-        element.click();
-        js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
-
-        getWebDriver().findElement(By.xpath("//span[contains(.,'Sold Out')]//..//..//button[@aria-label='Add to Basket']")).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".mat-simple-snackbar.ng-star-inserted span")));
-
-        String actualSoldOutMessage = getWebDriver().findElement(By.cssSelector(".mat-simple-snackbar.ng-star-inserted span")).getText();
+        String actualSoldOutMessage = allProductsPage.getActualSoldOutMessage();
         Assert.assertEquals(actualSoldOutMessage, expectedSoldOutMessage, "Sold Out Products validation error doesn't match");
     }
 }

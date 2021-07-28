@@ -1,37 +1,33 @@
 package com.customertimes.test.hw4.login;
-import com.customertimes.framework.driver.WebdriverRunner;
+import com.customertimes.model.Customer;
 import com.customertimes.test.BaseTest;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import static com.customertimes.framework.driver.WebdriverRunner.getWebDriver;
+import com.customertimes.framework.pages.LoginFluentPage;
 
 public class LoginWithEmptyPasswordTest extends BaseTest {
-    String userMail = "omeleshko11@gmail.com";
+
+    Customer customer;
+    LoginFluentPage loginFluentPage;
     boolean expectedStateLoginButton = false;
 
     @BeforeClass
     public void setup() throws InterruptedException {
         getWebDriver().get("http://localhost:3000/#/");
         getWebDriver().findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-    }
-
-    @AfterClass
-    public void turnDown() {
-        WebdriverRunner.closeWebDriver();
+        customer = Customer.newBuilder().withName("omeleshko11@gmail.com").build();
+        loginFluentPage = new LoginFluentPage(driver);
     }
 
     @Test
     public void userCannotLoginWithoutPassword() {
-        getWebDriver().findElement(By.id("navbarAccount")).click();
-        getWebDriver().findElement(By.id("navbarLoginButton")).click();
-
-        getWebDriver().findElement(By.id("email")).clear();
-        getWebDriver().findElement(By.id("email")).sendKeys(userMail);
-
-        boolean actualStateLoginButton = getWebDriver().findElement(By.id("loginButton")).isEnabled();
+        boolean actualStateLoginButton = loginFluentPage
+                .navigateToLoginPage()
+                .enterEmail(customer.getEmail())
+                .getActualStateLoginButton();
         Assert.assertEquals(actualStateLoginButton, expectedStateLoginButton, "Login button is enabled");
     }
 }

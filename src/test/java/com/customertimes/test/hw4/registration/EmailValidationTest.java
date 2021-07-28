@@ -1,43 +1,41 @@
 package com.customertimes.test.hw4.registration;
-import com.customertimes.framework.driver.WebdriverRunner;
+
+import com.customertimes.framework.pages.LoginPage;
+import com.customertimes.framework.pages.RegistrationPage;
+import com.customertimes.model.Customer;
 import com.customertimes.test.BaseTest;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import static com.customertimes.framework.driver.WebdriverRunner.getWebDriver;
 
 public class EmailValidationTest extends BaseTest {
-
-    String userMailReg = "@";
+    
     String expectedEmailError = "Email address is not valid.";
+    WebDriverWait wait;
+    Customer customer;
+    LoginPage loginPage;
+    RegistrationPage registrationPage;
 
     @BeforeClass
     public void setup() throws InterruptedException {
-        getWebDriver().get("http://localhost:3000/#/");
-        getWebDriver().findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-    }
-
-    @AfterClass
-    public void turnDown() {
-
-        WebdriverRunner.closeWebDriver();
+        driver.get("http://localhost:3000/#/");
+        driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
+        wait = new WebDriverWait(driver, 5);
+        customer = Customer.newBuilder().withName("@").build();
+        loginPage = new LoginPage(driver);
+        registrationPage = new RegistrationPage(driver);
     }
 
     @Test
     public void userCannotProvideInvalidEmail() {
-        getWebDriver().findElement(By.id("navbarAccount")).click();
-        getWebDriver().findElement(By.id("navbarLoginButton")).click();
+        loginPage.navigateToRegistrationPage();
 
-        getWebDriver().findElement(By.id("newCustomerLink")).click();
+        registrationPage.enterEmailReg(customer.getEmail());
+        registrationPage.clickOnPasswordRegField();
 
-        getWebDriver().findElement(By.id("emailControl")).clear();
-        getWebDriver().findElement(By.id("emailControl")).sendKeys(userMailReg);
-
-        getWebDriver().findElement(By.id("passwordControl")).click();
-
-        String actualEmailError = getWebDriver().findElement(By.id("mat-error-7")).getText();
+        String actualEmailError = registrationPage.getEmailValidationError();
         Assert.assertEquals(actualEmailError, expectedEmailError, "Invalid email field validation error doesn't match");
     }
 }

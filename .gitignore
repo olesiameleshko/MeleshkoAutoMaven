@@ -1,6 +1,7 @@
 # IntelliJ Idea
 .idea
 *.iml
+allure-results
 
 # other dirs
 target

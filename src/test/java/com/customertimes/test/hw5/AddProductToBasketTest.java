@@ -1,58 +1,54 @@
 package com.customertimes.test.hw5;
 
-import com.customertimes.framework.driver.WebdriverRunner;
+import com.customertimes.framework.pages.AllProductsPage;
+import com.customertimes.framework.pages.BasketPage;
+import com.customertimes.framework.pages.LoginPage;
+import com.customertimes.model.Customer;
+import com.customertimes.test.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import static com.customertimes.framework.driver.WebdriverRunner.getWebDriver;
+public class AddProductToBasketTest extends BaseTest {
 
-public class AddProductToBasketTest {
-    String userMail = "omeleshko28@gmail.com";
-    String password = "22334455Le+";
     WebDriverWait wait;
+    Customer customer;
+    LoginPage loginPage;
+    AllProductsPage allProductsPage;
+    BasketPage basketPage;
     String expectedProductInBasket = "Apple Juice (1000ml)";
     String expectedQuantityInBasket = "1";
 
     @BeforeClass
     public void setup() throws InterruptedException {
-        getWebDriver().get("http://localhost:3000/#/");
-        getWebDriver().findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        wait = new WebDriverWait(getWebDriver(), 5);
-    }
-
-    @AfterClass
-    public void turnDown() {
-
-        WebdriverRunner.closeWebDriver();
+        driver.get("http://localhost:3000/#/");
+        driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
+        wait = new WebDriverWait(driver, 5);
+        customer = Customer.newBuilder().withName("omeleshko51@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
+        loginPage = new LoginPage(driver);
+        allProductsPage = new AllProductsPage(driver);
+        basketPage = new BasketPage(driver);
     }
 
     @Test
     public void userCanAddProductToBasket() {
-        getWebDriver().findElement(By.id("navbarAccount")).click();
-        getWebDriver().findElement(By.id("navbarLoginButton")).click();
+        loginPage.loginAs(customer);
 
-        getWebDriver().findElement(By.id("email")).clear();
-        getWebDriver().findElement(By.id("email")).sendKeys(userMail);
+        allProductsPage.clickAddProductToBasket();
 
-        getWebDriver().findElement(By.id("password")).clear();
-        getWebDriver().findElement(By.id("password")).sendKeys(password);
+        allProductsPage.clickYourBasketButton();
 
-        getWebDriver().findElement(By.id("loginButton")).click();
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("mat-grid-tile:first-child button[aria-label='Add to Basket']")));
-        getWebDriver().findElement(By.cssSelector("mat-grid-tile:first-child button[aria-label='Add to Basket']")).click();
-
-        getWebDriver().findElement(By.cssSelector("button[aria-label='Show the shopping cart']")).click();
-        String actualProductInBasket = getWebDriver().findElement(By.cssSelector(".mat-table.cdk-table mat-cell+mat-cell")).getText();
+        String actualProductInBasket = basketPage.getActualProductInBasket();
         SoftAssert softassert = new SoftAssert();
         softassert.assertEquals(actualProductInBasket, expectedProductInBasket, "The product doesn't match");
-        String actualQuantityInBasket = getWebDriver().findElement(By.cssSelector(".mat-table.cdk-table button+span")).getText();
+        String actualQuantityInBasket = basketPage.getActualQuantityInBasket();
         softassert.assertEquals(actualQuantityInBasket, expectedQuantityInBasket, "The quantity doesn't match");
         softassert.assertAll();
     }
+
+
+
+
 }
