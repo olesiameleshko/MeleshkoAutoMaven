@@ -8,4 +8,8 @@ public interface TestConfig extends Config {
     TestConfig CONFIG = ConfigFactory.create(TestConfig.class);
     @DefaultValue("Chrome")
     String browser();
+
+    boolean remote ();
+
+    String seleniumServerUrl();
 }

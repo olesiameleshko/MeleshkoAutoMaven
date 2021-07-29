@@ -11,18 +11,18 @@ import org.testng.annotations.Test;
 
 
 public class LoginWithIncorrectCredentialsTest extends BaseTest {
-    String incorrectPassword = "22334455Le";
-    String expectedValidationError = "Invalid email or password.";
     WebDriverWait wait;
     Customer customer;
     LoginPage loginPage;
+    String incorrectPassword = "22334455Le";
+    String expectedValidationError = "Invalid email or password.";
 
     @BeforeClass
     public void setup() throws InterruptedException {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         wait = new WebDriverWait(driver, 1);
-        customer = Customer.newBuilder().withName("omeleshko44@gmail.com").withPassword(incorrectPassword).build();
+        customer = Customer.newBuilder().withName("omeleshko52@gmail.com").withPassword(incorrectPassword).build();
         loginPage = new LoginPage(driver);
     }
 

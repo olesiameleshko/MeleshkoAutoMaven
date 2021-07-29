@@ -23,12 +23,12 @@ public class BasketPage extends AbstractPage{
     }
 
     public String getActualProductInBasket() {
-        String actualProductInBasket = driver.findElement(productInBasket).getText();
+        String actualProductInBasket = getElement(productInBasket).getText();
         return actualProductInBasket;
     }
 
     public String getActualQuantityInBasket() {
-        String actualQuantityInBasket = driver.findElement(quantityInBasket).getText();
+        String actualQuantityInBasket = getElement(quantityInBasket).getText();
         return actualQuantityInBasket;
     }
 }

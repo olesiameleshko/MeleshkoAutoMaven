@@ -23,7 +23,7 @@ public class UniqueEmailValidationTest extends BaseTest {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         wait = new WebDriverWait(driver, 5);
-        customer = Customer.newBuilder().withName("omeleshko50@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
+        customer = Customer.newBuilder().withName("omeleshko53@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);
     }

@@ -6,10 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static com.customertimes.framework.driver.WebdriverRunner.getWebDriver;
 
 public class LoginPageFactory extends AbstractPage {
 
@@ -46,8 +43,7 @@ public class LoginPageFactory extends AbstractPage {
     }
 
     public String getActualNameText(String currentEmail) {
-        wait.until(ExpectedConditions.textToBe(goToUserProfileButton, currentEmail));
-        String actualNameText = getWebDriver().findElement(goToUserProfileButton).getText();
+        String actualNameText = getElement(goToUserProfileButton).getText();
         return actualNameText;
     }
 

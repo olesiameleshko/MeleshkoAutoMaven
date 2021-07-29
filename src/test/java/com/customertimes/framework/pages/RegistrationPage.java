@@ -4,7 +4,6 @@ import com.customertimes.model.Customer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegistrationPage extends AbstractPage{
@@ -32,44 +31,46 @@ public class RegistrationPage extends AbstractPage{
 
     }
     public void enterEmailReg (String emailReg) {
-        WebElement emailRegEllement = driver.findElement(emailFieldReg);
+        WebElement emailRegEllement = getElement(emailFieldReg);
         emailRegEllement.clear();
         emailRegEllement.sendKeys(emailReg);
     }
     public void enterPasswordReg(String passwordReg) {
-        WebElement passwordRegEllement = driver.findElement(passwordRegField);
+        WebElement passwordRegEllement = getElement(passwordRegField);
         passwordRegEllement.clear();
         passwordRegEllement.sendKeys(passwordReg);
     }
 
     public void enterRepeatPasswordReg(String repeatPasswordReg) {
-        WebElement repeatPasswordRegEllement = driver.findElement(repeatPasswordRegField);
+        WebElement repeatPasswordRegEllement = getElement(repeatPasswordRegField);
         repeatPasswordRegEllement.clear();
         repeatPasswordRegEllement.sendKeys(repeatPasswordReg);
     }
 
     public void clickSecurityQuestionDropDown() {
-        WebElement securityQuestionDropDownEllement = driver.findElement(securityQuestionDropDown);
+        WebElement securityQuestionDropDownEllement = getElement(securityQuestionDropDown);
         securityQuestionDropDownEllement.click();
     }
 
     public void clickOnPasswordRegField() {
 
-        driver.findElement(passwordRegField).click();
+        getElement(passwordRegField).click();
     }
 
     public void chooseSecurityQuestionOption() {
-        driver.findElement(securityQuestionOption).click();
+
+        getElement(securityQuestionOption).click();
     }
 
     public void enterSecurityAnswer(String securityAnswer) {
-        WebElement securityAnswerEllement = driver.findElement(securityAnswerField);
+        WebElement securityAnswerEllement = getElement(securityAnswerField);
         securityAnswerEllement.clear();
         securityAnswerEllement.sendKeys(securityAnswer);
     }
 
     public void clickRegisterButton() {
-        driver.findElement(registerButton).click();
+
+        getElement(registerButton).click();
     }
 
     public void registerAs(Customer customer) {
@@ -83,18 +84,17 @@ public class RegistrationPage extends AbstractPage{
     }
 
     public String getEmailValidationError() {
-        String actualEmailError = driver.findElement(emailRegValidation).getText();
+        String actualEmailError = getElement(emailRegValidation).getText();
         return actualEmailError;
     }
 
     public String getPasswordMatchingError() {
-        String actualPasswordError = driver.findElement(passwordErrorValidation).getText();
+        String actualPasswordError = getElement(passwordErrorValidation).getText();
         return actualPasswordError;
     }
 
     public String getUniqueValidationError() {
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(uniqueValidation)));
-        String actualUniqueError = driver.findElement(uniqueValidation).getText();
+        String actualUniqueError = getElement(uniqueValidation).getText();
         return actualUniqueError;
     }
 }

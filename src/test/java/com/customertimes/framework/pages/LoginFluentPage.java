@@ -38,29 +38,29 @@ public class LoginFluentPage extends AbstractPage {
     }
 
     public boolean getActualStateLoginButton() {
-        boolean actualState = driver.findElement(loginButton).isEnabled();
+        boolean actualState = getElement(loginButton).isEnabled();
         return actualState;
     }
 
     public LoginFluentPage clickOnAccountButton() {
-        driver.findElement(navBarAccount).click();
+        getElement(navBarAccount).click();
         return this;
     }
 
     public LoginFluentPage clickOnLoginButton() {
-        driver.findElement(loginButton).click();
+        getElement(loginButton).click();
         return this;
     }
 
     public LoginFluentPage enterPassword(String password) {
-        WebElement passwordElement = driver.findElement(passwordField);
+        WebElement passwordElement = getElement(passwordField);
         passwordElement.clear();
         passwordElement.sendKeys(password);
         return this;
     }
 
     public LoginFluentPage enterEmail(String email) {
-        WebElement emailElement = driver.findElement(emailField);
+        WebElement emailElement = getElement(emailField);
         emailElement.clear();
         emailElement.sendKeys(email);
         return this;
@@ -68,7 +68,7 @@ public class LoginFluentPage extends AbstractPage {
 
     public LoginFluentPage navigateToLoginPage() {
         clickOnAccountButton();
-        driver.findElement(loginSubmitButton).click();
+        getElement(loginSubmitButton).click();
         return this;
     }
 

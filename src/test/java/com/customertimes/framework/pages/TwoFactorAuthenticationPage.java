@@ -3,7 +3,6 @@ package com.customertimes.framework.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TwoFactorAuthenticationPage extends AbstractPage {
@@ -25,19 +24,18 @@ public class TwoFactorAuthenticationPage extends AbstractPage {
     }
 
     public void enter2FA(String twoFA) {
-        wait.until(ExpectedConditions.presenceOfElementLocated(twoFATokenField));
-        WebElement twoFAEllement = driver.findElement(twoFATokenField);
+        WebElement twoFAEllement = getElement(twoFATokenField);
         twoFAEllement.clear();
         twoFAEllement.sendKeys(twoFA);
     }
 
     public void clickSubmitButton() {
 
-        driver.findElement(submitButton).click();
+        getElement(submitButton).click();
     }
 
     public String getActual2FAError() {
-        String actual2FAError = driver.findElement(twoFAerror).getText();
+        String actual2FAError = getElement(twoFAerror).getText();
         return actual2FAError;
     }
 }

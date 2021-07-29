@@ -4,15 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AllProductsPage extends AbstractPage{
 
     private WebDriverWait wait;
     private By yourBasketButton = By.cssSelector("button[aria-label='Show the shopping cart']");
-    private By addAppleToBacket = By.cssSelector("mat-grid-tile:first-child button[aria-label='Add to Basket']");
-    private By productTileButton = By.cssSelector(".mat-grid-tile:nth-child(3)");
+    private By addAppleToBacket = By.cssSelector("mat-grid-tile:nth-child(2) button[aria-label='Add to Basket']");
+    private By productTileButton = By.cssSelector(".mat-grid-tile:nth-child(4)");
     private By productName = By.cssSelector(".mat-dialog-content h1");
     private By productDescription = By.cssSelector(".mat-dialog-content h1+div");
     private By productPrice = By.cssSelector(".mat-dialog-content p:only-child");
@@ -34,58 +33,56 @@ public class AllProductsPage extends AbstractPage{
     }
 
     public void clickAddProductToBasket() {
-        wait.until(ExpectedConditions.presenceOfElementLocated(addAppleToBacket));
-        driver.findElement(addAppleToBacket).click();
+
+        getElement(addAppleToBacket).click();
     }
 
     public void clickYourBasketButton() {
-        driver.findElement(yourBasketButton).click();
+
+        getElement(yourBasketButton).click();
     }
 
     public void clickOnProductTile() {
 
-        driver.findElement(productTileButton).click();
+        getElement(productTileButton).click();
     }
 
-
     public String getProductName() {
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(productName)));
-        String actualProductName = driver.findElement(productName).getText();
+        String actualProductName = getElement(productName).getText();
         return actualProductName;
     }
 
     public String getProductDescription() {
-        String actualProductDescription = driver.findElement(productDescription).getText();
+        String actualProductDescription = getElement(productDescription).getText();
         return actualProductDescription;
     }
 
     public String getProductPrice() {
-        String actualProductPrice = driver.findElement(productPrice).getText();
+        String actualProductPrice = getElement(productPrice).getText();
         return actualProductPrice;
     }
 
     public void dismissCookieMessage() {
-        driver.findElement(dismissCookieMessageButton).click();
+
+        getElement(dismissCookieMessageButton).click();
     }
 
     public JavascriptExecutor navigateToNextPageUsingScroll() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        WebElement element = driver.findElement(nextPageButton);
-        wait.until(ExpectedConditions.visibilityOf(element));
+        WebElement element = getElement(nextPageButton);
         js.executeScript("arguments[0].scrollIntoView();", element);
-        wait.until(ExpectedConditions.elementToBeClickable(element));
+        getElement(nextPageButton);
         element.click();
         js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
         return js;
     }
 
     public void addToBasketSoldOutProduct() {
-        driver.findElement(soldOutProduct).click();
+        getElement(soldOutProduct).click();
     }
 
     public String getActualSoldOutMessage() {
-        wait.until(ExpectedConditions.presenceOfElementLocated(soldOutMessage));
-        String actualSoldOutMessage = driver.findElement(soldOutMessage).getText();
+        String actualSoldOutMessage = getElementByPresence(soldOutMessage).getText();
         return actualSoldOutMessage;
     }
 }

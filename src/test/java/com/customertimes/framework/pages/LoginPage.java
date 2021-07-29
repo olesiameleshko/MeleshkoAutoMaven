@@ -4,7 +4,6 @@ import com.customertimes.model.Customer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -28,6 +27,7 @@ public class LoginPage extends AbstractPage {
         wait = new WebDriverWait(driver, TIME_OUT);
     }
 
+
     @Override
     public void openPage() {
 
@@ -36,36 +36,35 @@ public class LoginPage extends AbstractPage {
 
 
     public String getActualNameText(String currentEmail) {
-        wait.until(ExpectedConditions.textToBe(goToUserProfileButton, currentEmail));
-        String actualNameText = driver.findElement(goToUserProfileButton).getText();
+        String actualNameText = getElement(goToUserProfileButton).getText();
         return actualNameText;
     }
 
     public void clickOnAccountButton() {
 
-        driver.findElement(navBarAccount).click();
+        getElement(navBarAccount).click();
     }
 
     public void clickOnLoginButton() {
 
-        driver.findElement(loginButton).click();
+        getElement(loginButton).click();
     }
 
     public void enterPassword(String password) {
-        WebElement passwordEllement = driver.findElement(passwordField);
+        WebElement passwordEllement = getElement(passwordField);
         passwordEllement.clear();
         passwordEllement.sendKeys(password);
     }
 
     public void enterEmail(String email) {
-        WebElement emailEllement = driver.findElement(emailField);
+        WebElement emailEllement = getElement(emailField);
         emailEllement.clear();
         emailEllement.sendKeys(email);
     }
 
     public void navigateToLoginPage() {
         clickOnAccountButton();
-        driver.findElement(loginSubmitButton).click();
+        getElement(loginSubmitButton).click();
     }
 
     public void loginAs(Customer customer) {
@@ -75,18 +74,12 @@ public class LoginPage extends AbstractPage {
         clickOnLoginButton();
     }
 
-    public void waitOfPresenseEmail() {
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(emailField));
-    }
-
     public void clickNewCustomerButton() {
-
-        driver.findElement(goToRegistrationPage).click();
+        getElement(goToRegistrationPage).click();
     }
 
     public void clickOnForcePageReloadButton() {
-        driver.findElement(forcePageReloadButton).click();
+        getElement(forcePageReloadButton).click();
     }
 
     public void navigateToRegistrationPage() {
@@ -94,11 +87,11 @@ public class LoginPage extends AbstractPage {
         clickOnForcePageReloadButton();
         clickNewCustomerButton();
     }
-    public String getIncorrectCredentialsError() {
-        wait.until(ExpectedConditions.presenceOfElementLocated(incorrectCredentialsError));
-        String actualValidationError = driver.findElement(incorrectCredentialsError).getText();
-        return actualValidationError;
 
+    public String getIncorrectCredentialsError() {
+        //wait.until(ExpectedConditions.presenceOfElementLocated(incorrectCredentialsError));
+        String actualValidationError = getElement(incorrectCredentialsError).getText();
+        return actualValidationError;
     }
 }
 

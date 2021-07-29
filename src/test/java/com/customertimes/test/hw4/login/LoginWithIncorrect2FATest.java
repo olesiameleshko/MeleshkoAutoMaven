@@ -16,7 +16,7 @@ public class LoginWithIncorrect2FATest extends BaseTest {
     Customer customer;
     LoginPageFactory loginPageFactory;
     TwoFactorAuthenticationPage twoFactorAuthenticationPage;
-    String incorrect2FACode ="111111";
+    //String incorrect2FACode ="111111";
     String expected2FAError = "The token appears to be invalid.";
 
     @BeforeClass
@@ -24,7 +24,7 @@ public class LoginWithIncorrect2FATest extends BaseTest {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         wait = new WebDriverWait(driver, 5);
-        customer = Customer.newBuilder().withName("omeleshko44@gmail.com").withPassword("22334455Le+").build();
+        customer = Customer.newBuilder().withName("omeleshko52@gmail.com").withPassword("22334455Le+").withTwoFA("111111").build();
         loginPageFactory = new LoginPageFactory(driver);
         twoFactorAuthenticationPage = new TwoFactorAuthenticationPage(driver);
     }
@@ -34,7 +34,7 @@ public class LoginWithIncorrect2FATest extends BaseTest {
 
     loginPageFactory.loginAs(customer);
 
-    twoFactorAuthenticationPage.enter2FA(incorrect2FACode);
+    twoFactorAuthenticationPage.enter2FA(customer.getTwoFA());
 
     twoFactorAuthenticationPage.clickSubmitButton();
 
