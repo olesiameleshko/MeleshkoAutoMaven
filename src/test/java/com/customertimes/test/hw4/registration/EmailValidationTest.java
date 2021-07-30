@@ -5,7 +5,6 @@ import com.customertimes.framework.pages.RegistrationPage;
 import com.customertimes.model.Customer;
 import com.customertimes.test.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -13,7 +12,6 @@ import org.testng.annotations.Test;
 public class EmailValidationTest extends BaseTest {
     
     String expectedEmailError = "Email address is not valid.";
-    WebDriverWait wait;
     Customer customer;
     LoginPage loginPage;
     RegistrationPage registrationPage;
@@ -22,7 +20,6 @@ public class EmailValidationTest extends BaseTest {
     public void setup() throws InterruptedException {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        wait = new WebDriverWait(driver, 5);
         customer = Customer.newBuilder().withName("@").build();
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);

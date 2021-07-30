@@ -75,10 +75,12 @@ public class LoginPage extends AbstractPage {
     }
 
     public void clickNewCustomerButton() {
+
         getElement(goToRegistrationPage).click();
     }
 
     public void clickOnForcePageReloadButton() {
+
         getElement(forcePageReloadButton).click();
     }
 
@@ -89,7 +91,6 @@ public class LoginPage extends AbstractPage {
     }
 
     public String getIncorrectCredentialsError() {
-        //wait.until(ExpectedConditions.presenceOfElementLocated(incorrectCredentialsError));
         String actualValidationError = getElement(incorrectCredentialsError).getText();
         return actualValidationError;
     }

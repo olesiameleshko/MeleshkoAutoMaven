@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 
 public class PasswordMatchingValidationTest extends BaseTest {
 
-    WebDriverWait wait;
     Customer customer;
     LoginPage loginPage;
     RegistrationPage registrationPage;
@@ -23,7 +22,6 @@ public class PasswordMatchingValidationTest extends BaseTest {
     public void setup() throws InterruptedException {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        wait = new WebDriverWait(driver, 5);
         customer = Customer.newBuilder().withName("omeleshko32@gmail.com").withPassword("22334455Le+").build();
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);

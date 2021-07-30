@@ -2,14 +2,12 @@ package com.customertimes.test.hw5;
 import com.customertimes.framework.pages.AllProductsPage;
 import com.customertimes.test.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class ProductInfoTest extends BaseTest {
 
-    WebDriverWait wait;
     AllProductsPage allProductsPage;
     String expectedProductName = "Banana Juice (1000ml)";
     String expectedDescription = "Monkeys love it the most.";
@@ -19,7 +17,6 @@ public class ProductInfoTest extends BaseTest {
     public void setup() throws InterruptedException {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        wait = new WebDriverWait(driver, 5);
         allProductsPage = new AllProductsPage(driver);
     }
 

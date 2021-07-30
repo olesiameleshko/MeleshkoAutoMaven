@@ -4,14 +4,14 @@ import com.customertimes.framework.pages.LoginPage;
 import com.customertimes.model.Customer;
 import com.customertimes.test.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
 public class LoginWithIncorrectCredentialsTest extends BaseTest {
-    WebDriverWait wait;
+
     Customer customer;
     LoginPage loginPage;
     String incorrectPassword = "22334455Le";
@@ -21,7 +21,6 @@ public class LoginWithIncorrectCredentialsTest extends BaseTest {
     public void setup() throws InterruptedException {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        wait = new WebDriverWait(driver, 1);
         customer = Customer.newBuilder().withName("omeleshko52@gmail.com").withPassword(incorrectPassword).build();
         loginPage = new LoginPage(driver);
     }
