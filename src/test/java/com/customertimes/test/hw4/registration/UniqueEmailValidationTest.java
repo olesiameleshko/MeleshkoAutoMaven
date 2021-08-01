@@ -18,7 +18,7 @@ public class UniqueEmailValidationTest extends BaseTest {
     String expectedError = "Email must be unique";
 
     @BeforeClass
-    public void setup() throws InterruptedException {
+    public void setup() {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         customer = Customer.newBuilder().withName("omeleshko53@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();

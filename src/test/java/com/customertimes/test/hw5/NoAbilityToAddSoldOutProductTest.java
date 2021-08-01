@@ -19,7 +19,7 @@ public class NoAbilityToAddSoldOutProductTest extends BaseTest {
     String expectedSoldOutMessage = "We are out of stock! Sorry for the inconvenience.";
 
     @BeforeClass
-    public void setup() throws InterruptedException {
+    public void setup() {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         customer = Customer.newBuilder().withName("omeleshko53@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();

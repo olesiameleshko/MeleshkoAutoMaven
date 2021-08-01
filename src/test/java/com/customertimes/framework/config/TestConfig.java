@@ -3,13 +3,21 @@ package com.customertimes.framework.config;
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.ConfigFactory;
 
-@Config.Sources("classpath:config.properties")
+@Config.Sources("classpath:test.properties")
 public interface TestConfig extends Config {
-    TestConfig CONFIG = ConfigFactory.create(TestConfig.class);
+    TestConfig CONFIG = ConfigFactory.create(TestConfig.class, System.getenv(), System.getProperties());
     @DefaultValue("Chrome")
+
     String browser();
 
-    boolean remote ();
+    String browserVersion();
 
+    //@DefaultValue("true")
+    boolean remote();
+
+    @Key("selenium.server.url")
     String seleniumServerUrl();
+
+    @Key("base.url")
+    String baseUrl();
 }

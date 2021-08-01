@@ -18,7 +18,7 @@ public class LoginWithIncorrectCredentialsTest extends BaseTest {
     String expectedValidationError = "Invalid email or password.";
 
     @BeforeClass
-    public void setup() throws InterruptedException {
+    public void setup() {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         customer = Customer.newBuilder().withName("omeleshko52@gmail.com").withPassword(incorrectPassword).build();

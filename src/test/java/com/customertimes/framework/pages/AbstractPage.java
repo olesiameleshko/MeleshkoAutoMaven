@@ -1,5 +1,6 @@
 package com.customertimes.framework.pages;
 
+import com.customertimes.framework.config.TestConfig;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ public abstract class AbstractPage {
     protected WebDriver driver;
     protected final int TIME_OUT = 10;
     protected WebDriverWait wait;
+    protected final String BASE_PAGE = TestConfig.CONFIG.baseUrl();
 
     public AbstractPage(WebDriver driver) {
         this.driver = driver;

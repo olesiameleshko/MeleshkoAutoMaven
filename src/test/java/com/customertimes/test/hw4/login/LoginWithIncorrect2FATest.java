@@ -20,7 +20,7 @@ public class LoginWithIncorrect2FATest extends BaseTest {
     String expected2FAError = "The token appears to be invalid.";
 
     @BeforeClass
-    public void setup() throws InterruptedException {
+    public void setup() {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         customer = Customer.newBuilder().withName("omeleshko52@gmail.com").withPassword("22334455Le+").withTwoFA(incorrect2FACode).build();

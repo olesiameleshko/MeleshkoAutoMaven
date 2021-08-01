@@ -28,7 +28,7 @@ public class LoginFluentPage extends AbstractPage {
     @Override
     public void openPage() {
         driver.get("url/login");
-        //driver.get(BASE_PAGE + "/login");
+        driver.get(BASE_PAGE + "/login");
     }
 
 

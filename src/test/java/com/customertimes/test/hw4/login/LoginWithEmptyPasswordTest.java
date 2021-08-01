@@ -15,7 +15,7 @@ public class LoginWithEmptyPasswordTest extends BaseTest {
     boolean expectedStateLoginButton = false;
 
     @BeforeClass
-    public void setup() throws InterruptedException {
+    public void setup() {
         getWebDriver().get("http://localhost:3000/#/");
         getWebDriver().findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         customer = Customer.newBuilder().withName("omeleshko11@gmail.com").build();
