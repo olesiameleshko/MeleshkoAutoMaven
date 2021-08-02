@@ -1,5 +1,4 @@
 package com.customertimes.framework.driver;
-
 import com.customertimes.framework.config.TestConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -16,8 +15,8 @@ public class WebdriverRunner {
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     private WebdriverRunner() {
-
     }
+
     public static WebDriver getWebDriver() {
         if (driver.get() == null) {
             switch (TestConfig.CONFIG.browser()) {
@@ -29,7 +28,11 @@ public class WebdriverRunner {
                 default: {
                     if (TestConfig.CONFIG.remote()) {
                         try {
-                            driver.set(new RemoteWebDriver(new URL(TestConfig.CONFIG.seleniumServerUrl()), DesiredCapabilities.chrome()));
+                            DesiredCapabilities capabilities = new DesiredCapabilities();
+                            capabilities.setCapability("browserName", "chrome");
+                            capabilities.setCapability("browserVersion", "90.0");
+                            capabilities.setCapability("enableVNC", true);
+                            driver.set(new RemoteWebDriver(new URL(TestConfig.CONFIG.seleniumServerUrl()), capabilities));
                         } catch (MalformedURLException e) {
                             e.printStackTrace();
                         }
@@ -43,8 +46,9 @@ public class WebdriverRunner {
         }
         return driver.get();
     }
+
     public static void closeWebDriver() {
-        if (driver.get() != null); {
+        if (driver.get() != null) {
             driver.get().quit();
             driver.remove();
         }
