@@ -20,7 +20,7 @@ public class RegistrationTest extends BaseTest {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         //userMailReg = "omeleshko" + System.currentTimeMillis() + "@gmail.com";
-        customer = Customer.newBuilder().withName("omeleshko54@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
+        customer = Customer.newBuilder().withName("omeleshko56@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);
     }

@@ -8,22 +8,19 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
-import java.io.InputStream;
-
 public class BaseTest {
 
     protected WebDriver driver;
 
     @BeforeClass
     public void beforeClassInTheBaseTest() {
-        ClassLoader classLoader = getClass().getClassLoader();
-        InputStream inputStream = classLoader.getResourceAsStream("config.properties");
         System.out.println("This is before class in the base test");
         driver = WebdriverRunner.getWebDriver();
     }
 
     @BeforeSuite
     public void setup() {
+
         System.out.println("This is before suite");
     }
 

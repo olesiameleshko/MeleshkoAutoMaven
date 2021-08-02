@@ -7,8 +7,6 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.io.InputStream;
-
 public class LoginTest extends BaseTest {
 
     Customer customer;
@@ -16,11 +14,9 @@ public class LoginTest extends BaseTest {
 
     @BeforeClass
     public void setup() {
-        ClassLoader classLoader = getClass().getClassLoader();
-        InputStream inputStream = classLoader.getResourceAsStream("config.properties");
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        customer = Customer.newBuilder().withName("omeleshko53@gmail.com").withPassword("22334455Le+").build();
+        customer = Customer.newBuilder().withName("omeleshko54@gmail.com").withPassword("22334455Le+").build();
         loginPage = new LoginPage(driver);
     }
 
