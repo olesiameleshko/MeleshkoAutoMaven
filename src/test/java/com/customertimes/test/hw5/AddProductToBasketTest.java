@@ -1,15 +1,20 @@
 package com.customertimes.test.hw5;
 
+import com.customertimes.framework.config.TestConfig;
 import com.customertimes.framework.pages.AllProductsPage;
 import com.customertimes.framework.pages.BasketPage;
 import com.customertimes.framework.pages.LoginPage;
 import com.customertimes.model.Customer;
 import com.customertimes.test.BaseTest;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+@Epic("All products")
 public class AddProductToBasketTest extends BaseTest {
 
     Customer customer;
@@ -21,15 +26,17 @@ public class AddProductToBasketTest extends BaseTest {
 
     @BeforeClass
     public void setup() {
-        driver.get("http://localhost:3000/#/");
+        driver.get(TestConfig.CONFIG.baseUrl());
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        customer = Customer.newBuilder().withName("omeleshko53@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
+        customer = Customer.newBuilder().withName("omeleshko56@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
         loginPage = new LoginPage(driver);
         allProductsPage = new AllProductsPage(driver);
         basketPage = new BasketPage(driver);
     }
 
     @Test
+    @Feature("Ability to add product to basket")
+    @Description("The user can add product Juice Shop basket")
     public void userCanAddProductToBasket() {
         loginPage.loginAs(customer);
 

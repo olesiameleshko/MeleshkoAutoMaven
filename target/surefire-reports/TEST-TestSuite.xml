@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="123.985" tests="11" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.8.1\bin\../conf"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.8.1\bin\.."/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Olesia"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="user.name" value="Olesia"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Olesia\AppData\Local\Temp\"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="C:\Users\Olesia\IdeaProjects\MeleshkoAutoMaven"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Olesia\IdeaProjects\MeleshkoAutoMaven"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\Git\bin;C:\Program Files\Git\cmd;C:\Users\Olesia\AppData\Local\Microsoft\WindowsApps;C:\Users\Olesia\AppData\Local\GitHubDesktop\bin;C:\Program Files\apache-maven-3.8.1\bin;C:\Program Files\chromedriver_win32\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="userCannotProvideInvalidEmail" classname="com.customertimes.test.hw4.registration.EmailValidationTest" time="4.672"/>
+  <testcase name="userCanLoginToJuiceShop" classname="com.customertimes.test.hw4.login.LoginTest" time="2.063"/>
+  <testcase name="userCanAddProductToBasket" classname="com.customertimes.test.hw5.AddProductToBasketTest" time="4.377">
+    <failure message="The following asserts failed:&#10;	The quantity doesn&apos;t match expected [1] but found [2]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	The quantity doesn't match expected [1] but found [2]
+	at com.customertimes.test.hw5.AddProductToBasketTest.userCanAddProductToBasket(AddProductToBasketTest.java:52)
+</failure>
+    <system-out><![CDATA[This is after suite
+This is before class in the base test
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 31744
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 04, 2021 12:00:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="userPasswordsMatched" classname="com.customertimes.test.hw4.registration.PasswordMatchingValidationTest" time="4.065"/>
+  <testcase name="userCannotLoginWithoutPassword" classname="com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest" time="2.757"/>
+  <testcase name="userCannotAddSoldOutProductToBasket" classname="com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest" time="14.387">
+    <failure message="Expected condition failed: waiting for visibility of all elements located by By.cssSelector: button[aria-label=&apos;Next page&apos;] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-B5CJTOK&apos;, ip: &apos;172.21.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 04d4b0b36b8518260769089b43bda437" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.cssSelector: button[aria-label='Next page'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B5CJTOK', ip: '172.21.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04d4b0b36b8518260769089b43bda437
+	at com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest.userCannotAddSoldOutProductToBasket(NoAbilityToAddSoldOutProductTest.java:43)
+</failure>
+    <system-out><![CDATA[This is after suite
+This is before class in the base test
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 10373
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 04, 2021 12:00:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="userCanRegisterToJuicyShop" classname="com.customertimes.test.hw4.registration.RegistrationTest" time="6.995"/>
+  <testcase name="userCannotLoginWithIncorrect2FA" classname="com.customertimes.test.hw4.login.LoginWithIncorrect2FATest" time="15.062">
+    <failure message="Expected condition failed: waiting for visibility of all elements located by By.id: totpToken (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-B5CJTOK&apos;, ip: &apos;172.21.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 30e153f7eed053e04ef5cedf66c43a03" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.id: totpToken (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B5CJTOK', ip: '172.21.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30e153f7eed053e04ef5cedf66c43a03
+	at com.customertimes.test.hw4.login.LoginWithIncorrect2FATest.userCannotLoginWithIncorrect2FA(LoginWithIncorrect2FATest.java:43)
+</failure>
+    <system-out><![CDATA[This is after suite
+This is before class in the base test
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 3184
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 04, 2021 12:01:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="productInfoMatchingTest" classname="com.customertimes.test.hw5.ProductInfoTest" time="2.01"/>
+  <testcase name="userCannotUseEmailTwice" classname="com.customertimes.test.hw4.registration.UniqueEmailValidationTest" time="4.525"/>
+  <testcase name="userCannotUseIncorrectCredentials" classname="com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest" time="3.019">
+    <failure message="Incorrect credentials validation doesn&apos;t work correctly expected [Invalid email or password] but found [Invalid email or password.]" type="java.lang.AssertionError">java.lang.AssertionError: Incorrect credentials validation doesn't work correctly expected [Invalid email or password] but found [Invalid email or password.]
+	at com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest.userCannotUseIncorrectCredentials(LoginWithIncorrectCredentialsTest.java:39)
+</failure>
+    <system-out><![CDATA[This is after suite
+This is before class in the base test
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 15914
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 04, 2021 12:01:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

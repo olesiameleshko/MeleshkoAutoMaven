@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 123.985 s <<< FAILURE! - in TestSuite
+userCanAddProductToBasket(com.customertimes.test.hw5.AddProductToBasketTest)  Time elapsed: 4.377 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	The quantity doesn't match expected [1] but found [2]
+	at com.customertimes.test.hw5.AddProductToBasketTest.userCanAddProductToBasket(AddProductToBasketTest.java:52)
+
+userCannotAddSoldOutProductToBasket(com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest)  Time elapsed: 14.387 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.cssSelector: button[aria-label='Next page'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B5CJTOK', ip: '172.21.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04d4b0b36b8518260769089b43bda437
+	at com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest.userCannotAddSoldOutProductToBasket(NoAbilityToAddSoldOutProductTest.java:43)
+
+userCannotLoginWithIncorrect2FA(com.customertimes.test.hw4.login.LoginWithIncorrect2FATest)  Time elapsed: 15.062 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.id: totpToken (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B5CJTOK', ip: '172.21.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30e153f7eed053e04ef5cedf66c43a03
+	at com.customertimes.test.hw4.login.LoginWithIncorrect2FATest.userCannotLoginWithIncorrect2FA(LoginWithIncorrect2FATest.java:43)
+
+userCannotUseIncorrectCredentials(com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest)  Time elapsed: 3.019 s  <<< FAILURE!
+java.lang.AssertionError: Incorrect credentials validation doesn't work correctly expected [Invalid email or password] but found [Invalid email or password.]
+	at com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest.userCannotUseIncorrectCredentials(LoginWithIncorrectCredentialsTest.java:39)
+

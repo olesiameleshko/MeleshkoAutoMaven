@@ -1,5 +1,6 @@
 package com.customertimes.test.hw4.login;
 
+import com.customertimes.framework.config.TestConfig;
 import com.customertimes.framework.pages.LoginPage;
 import com.customertimes.model.Customer;
 import com.customertimes.test.BaseTest;
@@ -10,7 +11,6 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.io.InputStream;
 @Epic("Sign in/Sign up")
 public class LoginTest extends BaseTest {
 
@@ -19,15 +19,15 @@ public class LoginTest extends BaseTest {
 
     @BeforeClass
     public void setup() {
-        driver.get("http://localhost:3000/#/");
+        driver.get(TestConfig.CONFIG.baseUrl());
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        customer = Customer.newBuilder().withName("omeleshko53@gmail.com").withPassword("22334455Le+").build();
+        customer = Customer.newBuilder().withName("omeleshko56@gmail.com").withPassword("22334455Le+").build();
         loginPage = new LoginPage(driver);
     }
 
     @Test
-    @Feature("Login")
-    @Description("The user can login to Juicy Shop")
+    @Feature("Ability to login")
+    @Description("The user can login to Juice Shop")
     public void userCanLoginToJuiceShop() {
 
         loginPage.loginAs(customer);

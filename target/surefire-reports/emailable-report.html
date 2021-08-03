@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Regression Suite</th></tr>
+<tr><td><a href="#t0">Regression</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">121,319</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.customertimes.test.hw4.login.LoginWithIncorrect2FATest</td><td><a href="#m0">userCannotLoginWithIncorrect2FA</a></td><td rowspan="1">1628024475250</td><td rowspan="1">14647</td></tr><tr class="failedodd"><td rowspan="1">com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest</td><td><a href="#m1">userCannotUseIncorrectCredentials</a></td><td rowspan="1">1628024510896</td><td rowspan="1">2740</td></tr><tr class="failedeven"><td rowspan="1">com.customertimes.test.hw5.AddProductToBasketTest</td><td><a href="#m2">userCanAddProductToBasket</a></td><td rowspan="1">1628024418185</td><td rowspan="1">4084</td></tr><tr class="failedodd"><td rowspan="1">com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest</td><td><a href="#m3">userCannotAddSoldOutProductToBasket</a></td><td rowspan="1">1628024442452</td><td rowspan="1">14161</td></tr><tr><th colspan="4">Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.customertimes.test.hw4.login.LoginTest</td><td><a href="#m4">userCanLoginToJuiceShop</a></td><td rowspan="1">1628024411628</td><td rowspan="1">2063</td></tr><tr class="passedodd"><td rowspan="1">com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest</td><td><a href="#m5">userCannotLoginWithoutPassword</a></td><td rowspan="1">1628024435530</td><td rowspan="1">2757</td></tr><tr class="passedeven"><td rowspan="1">com.customertimes.test.hw4.registration.EmailValidationTest</td><td><a href="#m6">userCannotProvideInvalidEmail</a></td><td rowspan="1">1628024400286</td><td rowspan="1">4663</td></tr><tr class="passedodd"><td rowspan="1">com.customertimes.test.hw4.registration.PasswordMatchingValidationTest</td><td><a href="#m7">userPasswordsMatched</a></td><td rowspan="1">1628024426899</td><td rowspan="1">4065</td></tr><tr class="passedeven"><td rowspan="1">com.customertimes.test.hw4.registration.RegistrationTest</td><td><a href="#m8">userCanRegisterToJuicyShop</a></td><td rowspan="1">1628024461279</td><td rowspan="1">6994</td></tr><tr class="passedodd"><td rowspan="1">com.customertimes.test.hw4.registration.UniqueEmailValidationTest</td><td><a href="#m9">userCannotUseEmailTwice</a></td><td rowspan="1">1628024501993</td><td rowspan="1">4525</td></tr><tr class="passedeven"><td rowspan="1">com.customertimes.test.hw5.ProductInfoTest</td><td><a href="#m10">productInfoMatchingTest</a></td><td rowspan="1">1628024495758</td><td rowspan="1">2011</td></tr></tbody>
+</table>
+<h2>Regression</h2><h3 id="m0">com.customertimes.test.hw4.login.LoginWithIncorrect2FATest#userCannotLoginWithIncorrect2FA</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.id: totpToken (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-B5CJTOK&apos;, ip: &apos;172.21.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30e153f7eed053e04ef5cedf66c43a03
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.customertimes.framework.pages.AbstractPage.getElement(AbstractPage.java:24)
+	at com.customertimes.framework.pages.TwoFactorAuthenticationPage.enter2FA(TwoFactorAuthenticationPage.java:30)
+	at com.customertimes.test.hw4.login.LoginWithIncorrect2FATest.userCannotLoginWithIncorrect2FA(LoginWithIncorrect2FATest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest#userCannotUseIncorrectCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Incorrect credentials validation doesn&apos;t work correctly expected [Invalid email or password] but found [Invalid email or password.]
+	at com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest.userCannotUseIncorrectCredentials(LoginWithIncorrectCredentialsTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.customertimes.test.hw5.AddProductToBasketTest#userCanAddProductToBasket</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	The quantity doesn&apos;t match expected [1] but found [2]
+	at com.customertimes.test.hw5.AddProductToBasketTest.userCanAddProductToBasket(AddProductToBasketTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest#userCannotAddSoldOutProductToBasket</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: button[aria-label=&apos;Next page&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-B5CJTOK&apos;, ip: &apos;172.21.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04d4b0b36b8518260769089b43bda437
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.customertimes.framework.pages.AbstractPage.getElement(AbstractPage.java:24)
+	at com.customertimes.framework.pages.AllProductsPage.navigateToNextPageUsingScroll(AllProductsPage.java:82)
+	at com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest.userCannotAddSoldOutProductToBasket(NoAbilityToAddSoldOutProductTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.customertimes.test.hw4.login.LoginTest#userCanLoginToJuiceShop</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest#userCannotLoginWithoutPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.customertimes.test.hw4.registration.EmailValidationTest#userCannotProvideInvalidEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.customertimes.test.hw4.registration.PasswordMatchingValidationTest#userPasswordsMatched</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.customertimes.test.hw4.registration.RegistrationTest#userCanRegisterToJuicyShop</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.customertimes.test.hw4.registration.UniqueEmailValidationTest#userCannotUseEmailTwice</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.customertimes.test.hw5.ProductInfoTest#productInfoMatchingTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
