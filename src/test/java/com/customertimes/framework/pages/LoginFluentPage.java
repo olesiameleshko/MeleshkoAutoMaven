@@ -1,6 +1,7 @@
 package com.customertimes.framework.pages;
 
 import com.customertimes.model.Customer;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,32 +27,36 @@ public class LoginFluentPage extends AbstractPage {
     }
 
     @Override
+    @Step("Open Page")
     public void openPage() {
         driver.get("url/login");
         driver.get(BASE_PAGE + "/login");
     }
 
-
+    @Step("Search by text")
     public void searchByText(String text) {
-
         driver.findElement(By.xpath(String.format(searchXpathLocator, text)));
     }
 
+    @Step("Get Actual state of Login button")
     public boolean getActualStateLoginButton() {
         boolean actualState = getElement(loginButton).isEnabled();
         return actualState;
     }
 
+    @Step("Click on Account button")
     public LoginFluentPage clickOnAccountButton() {
         getElement(navBarAccount).click();
         return this;
     }
 
+    @Step("Click on Login button")
     public LoginFluentPage clickOnLoginButton() {
         getElement(loginButton).click();
         return this;
     }
 
+    @Step("Enter Password field")
     public LoginFluentPage enterPassword(String password) {
         WebElement passwordElement = getElement(passwordField);
         passwordElement.clear();
@@ -59,6 +64,7 @@ public class LoginFluentPage extends AbstractPage {
         return this;
     }
 
+    @Step("Enter Email field")
     public LoginFluentPage enterEmail(String email) {
         WebElement emailElement = getElement(emailField);
         emailElement.clear();
@@ -66,12 +72,14 @@ public class LoginFluentPage extends AbstractPage {
         return this;
     }
 
+    @Step("Navigate to Login page")
     public LoginFluentPage navigateToLoginPage() {
         clickOnAccountButton();
         getElement(loginSubmitButton).click();
         return this;
     }
 
+    @Step("Login as Customer")
     public LoginFluentPage loginAs(Customer customer) {
         navigateToLoginPage();
         enterEmail(customer.getEmail());

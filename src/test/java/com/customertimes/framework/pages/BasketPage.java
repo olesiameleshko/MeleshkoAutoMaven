@@ -1,5 +1,6 @@
 package com.customertimes.framework.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,15 +19,18 @@ public class BasketPage extends AbstractPage{
     }
 
     @Override
+    @Step("Open page")
     public void openPage() {
 
     }
 
+    @Step("Get Actual Product in Basket")
     public String getActualProductInBasket() {
         String actualProductInBasket = getElement(productInBasket).getText();
         return actualProductInBasket;
     }
 
+    @Step("Get Actual Quantity in Basket")
     public String getActualQuantityInBasket() {
         String actualQuantityInBasket = getElement(quantityInBasket).getText();
         return actualQuantityInBasket;

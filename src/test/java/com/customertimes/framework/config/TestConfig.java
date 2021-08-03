@@ -3,11 +3,11 @@ package com.customertimes.framework.config;
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.ConfigFactory;
 
-@Config.Sources("classpath:test.properties")
+@Config.Sources("file:src/test/resources/config.properties")
 public interface TestConfig extends Config {
     TestConfig CONFIG = ConfigFactory.create(TestConfig.class, System.getenv(), System.getProperties());
-    @DefaultValue("Chrome")
 
+    @DefaultValue("Chrome")
     String browser();
 
     String browserVersion();

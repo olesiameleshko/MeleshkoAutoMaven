@@ -16,8 +16,6 @@ public class BaseTest {
 
     @BeforeClass
     public void beforeClassInTheBaseTest() {
-        ClassLoader classLoader = getClass().getClassLoader();
-        InputStream inputStream = classLoader.getResourceAsStream("config.properties");
         System.out.println("This is before class in the base test");
         driver = WebdriverRunner.getWebDriver();
     }

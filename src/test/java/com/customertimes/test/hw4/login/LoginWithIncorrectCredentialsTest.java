@@ -15,7 +15,7 @@ public class LoginWithIncorrectCredentialsTest extends BaseTest {
     Customer customer;
     LoginPage loginPage;
     String incorrectPassword = "22334455Le";
-    String expectedValidationError = "Invalid email or password.";
+    String expectedValidationError = "Invalid email or password";
 
     @BeforeClass
     public void setup() {

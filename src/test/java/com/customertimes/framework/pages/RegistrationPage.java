@@ -1,6 +1,7 @@
 package com.customertimes.framework.pages;
 
 import com.customertimes.model.Customer;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,52 +28,64 @@ public class RegistrationPage extends AbstractPage{
     }
 
     @Override
+    @Step("Open page")
     public void openPage() {
 
     }
+
+    @Step("Enter Email field (registration form)")
     public void enterEmailReg (String emailReg) {
         WebElement emailRegEllement = getElement(emailFieldReg);
         emailRegEllement.clear();
         emailRegEllement.sendKeys(emailReg);
     }
+
+    @Step("Enter Password field (registration form)")
     public void enterPasswordReg(String passwordReg) {
         WebElement passwordRegEllement = getElement(passwordRegField);
         passwordRegEllement.clear();
         passwordRegEllement.sendKeys(passwordReg);
     }
 
+    @Step("Enter Repeat password field")
     public void enterRepeatPasswordReg(String repeatPasswordReg) {
         WebElement repeatPasswordRegEllement = getElement(repeatPasswordRegField);
         repeatPasswordRegEllement.clear();
         repeatPasswordRegEllement.sendKeys(repeatPasswordReg);
     }
 
+    @Step("Click on Security Question drop down")
     public void clickSecurityQuestionDropDown() {
         WebElement securityQuestionDropDownEllement = getElement(securityQuestionDropDown);
         securityQuestionDropDownEllement.click();
     }
 
+    @Step("Click on Password field (registration form)")
     public void clickOnPasswordRegField() {
 
         getElement(passwordRegField).click();
     }
 
+    @Step("Choose Security Question option")
     public void chooseSecurityQuestionOption() {
 
         getElement(securityQuestionOption).click();
     }
 
+    @Step("Enter Security answer")
     public void enterSecurityAnswer(String securityAnswer) {
         WebElement securityAnswerEllement = getElement(securityAnswerField);
         securityAnswerEllement.clear();
         securityAnswerEllement.sendKeys(securityAnswer);
     }
 
+    @Step("Click Registration button")
     public void clickRegisterButton() {
 
         getElement(registerButton).click();
     }
 
+    @Step("Register as Customer")
     public void registerAs(Customer customer) {
         enterEmailReg(customer.getEmail());
         enterPasswordReg(customer.getPassword());
@@ -83,16 +96,19 @@ public class RegistrationPage extends AbstractPage{
         clickRegisterButton();
     }
 
+    @Step("Get Email validation error")
     public String getEmailValidationError() {
         String actualEmailError = getElement(emailRegValidation).getText();
         return actualEmailError;
     }
 
+    @Step("Get Password matching error")
     public String getPasswordMatchingError() {
         String actualPasswordError = getElement(passwordErrorValidation).getText();
         return actualPasswordError;
     }
 
+    @Step("Get Unique validation error")
     public String getUniqueValidationError() {
         String actualUniqueError = getElement(uniqueValidation).getText();
         return actualUniqueError;

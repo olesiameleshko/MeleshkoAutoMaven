@@ -1,5 +1,6 @@
 package com.customertimes.framework.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,21 +20,25 @@ public class TwoFactorAuthenticationPage extends AbstractPage {
     }
 
     @Override
+    @Step("Open page")
     public void openPage() {
 
     }
 
+    @Step("Enter 2FA field")
     public void enter2FA(String twoFA) {
         WebElement twoFAEllement = getElement(twoFATokenField);
         twoFAEllement.clear();
         twoFAEllement.sendKeys(twoFA);
     }
 
+    @Step("Click Submit button")
     public void clickSubmitButton() {
 
         getElement(submitButton).click();
     }
 
+    @Step("Get Actual 2FA error")
     public String getActual2FAError() {
         String actual2FAError = getElement(twoFAerror).getText();
         return actual2FAError;
