@@ -16,15 +16,15 @@ public class LoginTest extends BaseTest {
     public void setup() {
         driver.get("http://localhost:3000/#/");
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        customer = Customer.newBuilder().withName("omeleshko54@gmail.com").withPassword("22334455Le+").build();
+        customer = Customer.newBuilder().withName("omeleshko57@gmail.com").withPassword("22334455Le+").build();
         loginPage = new LoginPage(driver);
     }
 
     @Test
-    public void userCanLoginToJuiceShop() {
+    public void userCanLoginToJuiceShop() throws InterruptedException {
 
         loginPage.loginAs(customer);
-
+        Thread.sleep(10_000);
         loginPage.clickOnAccountButton();
 
         String actualNameText = loginPage.getActualNameText(customer.getEmail());

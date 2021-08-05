@@ -16,8 +16,8 @@ public class LoginWithEmptyPasswordTest extends BaseTest {
 
     @BeforeClass
     public void setup() {
-        getWebDriver().get("http://localhost:3000/#/");
-        getWebDriver().findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
+        driver.get("http://localhost:3000/#/");
+        driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         customer = Customer.newBuilder().withName("omeleshko11@gmail.com").build();
         loginFluentPage = new LoginFluentPage(driver);
     }
