@@ -1,5 +1,6 @@
 package com.customertimes.framework.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -28,45 +29,54 @@ public class AllProductsPage extends AbstractPage{
     }
 
     @Override
+    @Step("Open page")
     public void openPage() {
 
     }
 
+    @Step("Click Add to basket button")
     public void clickAddProductToBasket() {
 
         getElement(addAppleToBacket).click();
     }
 
+    @Step("Click Your basket button")
     public void clickYourBasketButton() {
 
         getElement(yourBasketButton).click();
     }
 
+    @Step("Click on Product tile")
     public void clickOnProductTile() {
 
         getElement(productTileButton).click();
     }
 
+    @Step("Get Product name")
     public String getProductName() {
         String actualProductName = getElement(productName).getText();
         return actualProductName;
     }
 
+    @Step("Get Product description")
     public String getProductDescription() {
         String actualProductDescription = getElement(productDescription).getText();
         return actualProductDescription;
     }
 
+    @Step("Get Product price")
     public String getProductPrice() {
         String actualProductPrice = getElement(productPrice).getText();
         return actualProductPrice;
     }
 
+    @Step("Dismiss Cookie message")
     public void dismissCookieMessage() {
 
         getElement(dismissCookieMessageButton).click();
     }
 
+    @Step("Navigate to Next page using scroll")
     public JavascriptExecutor navigateToNextPageUsingScroll() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement element = getElement(nextPageButton);
@@ -77,10 +87,13 @@ public class AllProductsPage extends AbstractPage{
         return js;
     }
 
+    @Step("Add to Basket Sold out product")
     public void addToBasketSoldOutProduct() {
+
         getElement(soldOutProduct).click();
     }
 
+    @Step("Get Actual Sold out message")
     public String getActualSoldOutMessage() {
         String actualSoldOutMessage = getElementByPresence(soldOutMessage).getText();
         return actualSoldOutMessage;

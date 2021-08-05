@@ -7,7 +7,7 @@ import org.aeonbits.owner.ConfigFactory;
 public interface TestConfig extends Config {
     TestConfig CONFIG = ConfigFactory.create(TestConfig.class, System.getenv(), System.getProperties());
 
-    //@DefaultValue("Chrome")
+    @DefaultValue("Chrome")
     String browser();
 
     String browserVersion();
