@@ -1,8 +1,8 @@
 # IntelliJ Idea
 .idea
 *.iml
-allure-results
 .allure
+allure-results
 
 # other dirs
 draft
