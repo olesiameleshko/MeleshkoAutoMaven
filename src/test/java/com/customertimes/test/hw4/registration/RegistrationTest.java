@@ -25,7 +25,7 @@ public class RegistrationTest extends BaseTest {
         driver.get(TestConfig.CONFIG.baseUrl());
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
         //userMailReg = "omeleshko" + System.currentTimeMillis() + "@gmail.com";
-        customer = Customer.newBuilder().withName("omeleshko59@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
+        customer = Customer.newBuilder().withName("omeleshko60@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);
     }
