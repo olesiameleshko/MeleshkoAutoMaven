@@ -17,7 +17,6 @@ import org.testng.annotations.Test;
 @Epic("All products")
 public class NoAbilityToAddSoldOutProductTest extends BaseTest {
 
-    WebDriverWait wait;
     LoginPage loginPage;
     Customer customer;
     AllProductsPage allProductsPage;
