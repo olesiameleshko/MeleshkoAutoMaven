@@ -26,7 +26,7 @@ public class NoAbilityToAddSoldOutProductTest extends BaseTest {
     public void setup() {
         driver.get(TestConfig.CONFIG.baseUrl());
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        customer = Customer.newBuilder().withName("omeleshko57@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
+        customer = Customer.newBuilder().withName("omeleshko59@gmail.com").withPassword("22334455Le+").withAnswerReg("Crime and Punishment").build();
         loginPage = new LoginPage(driver);
         allProductsPage = new AllProductsPage(driver);
     }
