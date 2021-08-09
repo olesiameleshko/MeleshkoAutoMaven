@@ -18,13 +18,13 @@ public class LoginWithIncorrectCredentialsTest extends BaseTest {
     Customer customer;
     LoginPage loginPage;
     String incorrectPassword = "22334455Le";
-    String expectedValidationError = "Invalid email or password";
+    String expectedValidationError = "Invalid email or password.";
 
     @BeforeClass
     public void setup() {
         driver.get(TestConfig.CONFIG.baseUrl());
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        customer = Customer.newBuilder().withName("omeleshko56@gmail.com").withPassword(incorrectPassword).build();
+        customer = Customer.newBuilder().withName("omeleshko57@gmail.com").withPassword(incorrectPassword).build();
         loginPage = new LoginPage(driver);
     }
 

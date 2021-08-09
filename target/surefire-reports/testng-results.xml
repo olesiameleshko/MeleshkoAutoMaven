@@ -2,36 +2,36 @@
 <testng-results ignored="10" total="21" passed="7" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-03T23:59:53 EEST" name="Regression Suite" finished-at="2021-08-04T00:01:54 EEST" duration-ms="121319">
+  <suite started-at="2021-08-09T13:02:48 EEST" name="Regression Suite" finished-at="2021-08-09T13:04:56 EEST" duration-ms="128443">
     <groups>
     </groups>
-    <test started-at="2021-08-03T23:59:53 EEST" name="Regression" finished-at="2021-08-04T00:01:54 EEST" duration-ms="121319">
+    <test started-at="2021-08-09T13:02:48 EEST" name="Regression" finished-at="2021-08-09T13:04:56 EEST" duration-ms="128443">
       <class name="com.customertimes.test.hw4.login.LoginWithIncorrect2FATest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrect2FATest@143d9a93]" started-at="2021-08-04T00:01:10 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:01:12 EEST" duration-ms="1770" status="PASS">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrect2FATest@49096b06]" started-at="2021-08-09T13:04:01 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:04:04 EEST" duration-ms="2563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrect2FATest@143d9a93]" started-at="2021-08-04T00:01:12 EEST" name="setup" finished-at="2021-08-04T00:01:15 EEST" duration-ms="3136" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrect2FATest@49096b06]" started-at="2021-08-09T13:04:04 EEST" name="setup" finished-at="2021-08-09T13:04:10 EEST" duration-ms="6677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="userCannotLoginWithIncorrect2FA()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrect2FATest@143d9a93]" started-at="2021-08-04T00:01:15 EEST" name="userCannotLoginWithIncorrect2FA" finished-at="2021-08-04T00:01:29 EEST" duration-ms="14647" status="FAIL">
+        <test-method signature="userCannotLoginWithIncorrect2FA()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrect2FATest@49096b06]" started-at="2021-08-09T13:04:10 EEST" name="userCannotLoginWithIncorrect2FA" finished-at="2021-08-09T13:04:22 EEST" duration-ms="11707" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of all elements located by By.id: totpToken (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-B5CJTOK', ip: '172.21.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 30e153f7eed053e04ef5cedf66c43a03]]>
+System info: host: 'DESKTOP-B5CJTOK', ip: '172.29.128.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.yvtPv7}, goog:chromeOptions: {debuggerAddress: localhost:36873}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fdacefe8cab5c9af353993545a9d104]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.id: totpToken (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-B5CJTOK', ip: '172.21.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 30e153f7eed053e04ef5cedf66c43a03
+System info: host: 'DESKTOP-B5CJTOK', ip: '172.29.128.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.yvtPv7}, goog:chromeOptions: {debuggerAddress: localhost:36873}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fdacefe8cab5c9af353993545a9d104
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.customertimes.framework.pages.AbstractPage.getElement(AbstractPage.java:24)
@@ -74,60 +74,78 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCannotLoginWithIncorrect2FA -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrect2FATest@143d9a93]" started-at="2021-08-04T00:01:30 EEST" name="afterClass" finished-at="2021-08-04T00:01:31 EEST" duration-ms="819" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrect2FATest@49096b06]" started-at="2021-08-09T13:04:24 EEST" name="afterClass" finished-at="2021-08-09T13:04:24 EEST" duration-ms="325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.customertimes.test.hw4.login.LoginWithIncorrect2FATest -->
       <class name="com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest@5a9800f8]" started-at="2021-08-04T00:00:31 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:00:33 EEST" duration-ms="1430" status="PASS">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest@41d7b27f]" started-at="2021-08-09T13:03:31 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:03:33 EEST" duration-ms="2559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest@5a9800f8]" started-at="2021-08-04T00:00:33 EEST" name="setup" finished-at="2021-08-04T00:00:35 EEST" duration-ms="2356" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest@41d7b27f]" started-at="2021-08-09T13:03:33 EEST" name="setup" finished-at="2021-08-09T13:03:36 EEST" duration-ms="3157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="userCannotLoginWithoutPassword()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest@5a9800f8]" started-at="2021-08-04T00:00:35 EEST" name="userCannotLoginWithoutPassword" finished-at="2021-08-04T00:00:38 EEST" duration-ms="2757" status="PASS">
+        <test-method signature="userCannotLoginWithoutPassword()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest@41d7b27f]" started-at="2021-08-09T13:03:36 EEST" name="userCannotLoginWithoutPassword" finished-at="2021-08-09T13:03:37 EEST" duration-ms="1111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCannotLoginWithoutPassword -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest@5a9800f8]" started-at="2021-08-04T00:00:38 EEST" name="afterClass" finished-at="2021-08-04T00:00:39 EEST" duration-ms="797" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest@41d7b27f]" started-at="2021-08-09T13:03:37 EEST" name="afterClass" finished-at="2021-08-09T13:03:37 EEST" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest -->
       <class name="com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest@3e6f3bae]" started-at="2021-08-04T00:00:39 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:00:40 EEST" duration-ms="1640" status="PASS">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest@5b5caf08]" started-at="2021-08-09T13:03:37 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:03:43 EEST" duration-ms="5189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest@3e6f3bae]" started-at="2021-08-04T00:00:40 EEST" name="setup" finished-at="2021-08-04T00:00:42 EEST" duration-ms="1723" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest@5b5caf08]" started-at="2021-08-09T13:03:43 EEST" name="setup" finished-at="2021-08-09T13:03:45 EEST" duration-ms="2159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="userCannotAddSoldOutProductToBasket()[pri:0, instance:com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest@3e6f3bae]" started-at="2021-08-04T00:00:42 EEST" name="userCannotAddSoldOutProductToBasket" finished-at="2021-08-04T00:00:56 EEST" duration-ms="14161" status="FAIL">
+        <test-method signature="userCannotAddSoldOutProductToBasket()[pri:0, instance:com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest@5b5caf08]" started-at="2021-08-09T13:03:45 EEST" name="userCannotAddSoldOutProductToBasket" finished-at="2021-08-09T13:03:50 EEST" duration-ms="4877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCannotAddSoldOutProductToBasket -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest@5b5caf08]" started-at="2021-08-09T13:03:50 EEST" name="afterClass" finished-at="2021-08-09T13:03:50 EEST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest -->
+      <class name="com.customertimes.test.hw5.ProductInfoTest">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw5.ProductInfoTest@70807224]" started-at="2021-08-09T13:04:24 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:04:27 EEST" duration-ms="2852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassInTheBaseTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw5.ProductInfoTest@70807224]" started-at="2021-08-09T13:04:27 EEST" name="setup" finished-at="2021-08-09T13:04:30 EEST" duration-ms="2232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="productInfoMatchingTest()[pri:0, instance:com.customertimes.test.hw5.ProductInfoTest@70807224]" started-at="2021-08-09T13:04:30 EEST" name="productInfoMatchingTest" finished-at="2021-08-09T13:04:41 EEST" duration-ms="11155" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of all elements located by By.cssSelector: button[aria-label='Next page'] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for visibility of all elements located by By.cssSelector: .mat-dialog-content p:only-child (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-B5CJTOK', ip: '172.21.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 04d4b0b36b8518260769089b43bda437]]>
+System info: host: 'DESKTOP-B5CJTOK', ip: '172.29.128.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.vwIv4s}, goog:chromeOptions: {debuggerAddress: localhost:36447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e85a648f901517bffcbce2985ae6e51]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: button[aria-label='Next page'] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: .mat-dialog-content p:only-child (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-B5CJTOK', ip: '172.21.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 04d4b0b36b8518260769089b43bda437
+System info: host: 'DESKTOP-B5CJTOK', ip: '172.29.128.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.vwIv4s}, goog:chromeOptions: {debuggerAddress: localhost:36447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e85a648f901517bffcbce2985ae6e51
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.customertimes.framework.pages.AbstractPage.getElement(AbstractPage.java:24)
-at com.customertimes.framework.pages.AllProductsPage.navigateToNextPageUsingScroll(AllProductsPage.java:82)
-at com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest.userCannotAddSoldOutProductToBasket(NoAbilityToAddSoldOutProductTest.java:43)
+at com.customertimes.framework.pages.AllProductsPage.getProductPrice(AllProductsPage.java:69)
+at com.customertimes.test.hw5.ProductInfoTest.productInfoMatchingTest(ProductInfoTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -164,134 +182,116 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCannotAddSoldOutProductToBasket -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest@3e6f3bae]" started-at="2021-08-04T00:00:56 EEST" name="afterClass" finished-at="2021-08-04T00:00:57 EEST" duration-ms="922" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest -->
-      <class name="com.customertimes.test.hw5.ProductInfoTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw5.ProductInfoTest@2caf6912]" started-at="2021-08-04T00:01:31 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:01:33 EEST" duration-ms="2239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw5.ProductInfoTest@2caf6912]" started-at="2021-08-04T00:01:33 EEST" name="setup" finished-at="2021-08-04T00:01:35 EEST" duration-ms="2299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="productInfoMatchingTest()[pri:0, instance:com.customertimes.test.hw5.ProductInfoTest@2caf6912]" started-at="2021-08-04T00:01:35 EEST" name="productInfoMatchingTest" finished-at="2021-08-04T00:01:37 EEST" duration-ms="2011" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- productInfoMatchingTest -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw5.ProductInfoTest@2caf6912]" started-at="2021-08-04T00:01:37 EEST" name="afterClass" finished-at="2021-08-04T00:01:38 EEST" duration-ms="828" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw5.ProductInfoTest@70807224]" started-at="2021-08-09T13:04:41 EEST" name="afterClass" finished-at="2021-08-09T13:04:41 EEST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.customertimes.test.hw5.ProductInfoTest -->
       <class name="com.customertimes.test.hw4.registration.RegistrationTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.registration.RegistrationTest@5d05ef57]" started-at="2021-08-04T00:00:57 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:00:59 EEST" duration-ms="1422" status="PASS">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.registration.RegistrationTest@35e478f]" started-at="2021-08-09T13:03:50 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:03:54 EEST" duration-ms="4107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.registration.RegistrationTest@5d05ef57]" started-at="2021-08-04T00:00:59 EEST" name="setup" finished-at="2021-08-04T00:01:01 EEST" duration-ms="2088" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.registration.RegistrationTest@35e478f]" started-at="2021-08-09T13:03:54 EEST" name="setup" finished-at="2021-08-09T13:03:56 EEST" duration-ms="1879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="userCanRegisterToJuicyShop()[pri:0, instance:com.customertimes.test.hw4.registration.RegistrationTest@5d05ef57]" started-at="2021-08-04T00:01:01 EEST" name="userCanRegisterToJuicyShop" finished-at="2021-08-04T00:01:08 EEST" duration-ms="6994" status="PASS">
+        <test-method signature="userCanRegisterToJuicyShop()[pri:0, instance:com.customertimes.test.hw4.registration.RegistrationTest@35e478f]" started-at="2021-08-09T13:03:56 EEST" name="userCanRegisterToJuicyShop" finished-at="2021-08-09T13:04:01 EEST" duration-ms="5171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanRegisterToJuicyShop -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.registration.RegistrationTest@5d05ef57]" started-at="2021-08-04T00:01:08 EEST" name="afterClass" finished-at="2021-08-04T00:01:10 EEST" duration-ms="1890" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.registration.RegistrationTest@35e478f]" started-at="2021-08-09T13:04:01 EEST" name="afterClass" finished-at="2021-08-09T13:04:01 EEST" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.customertimes.test.hw4.registration.RegistrationTest -->
       <class name="com.customertimes.test.hw4.registration.UniqueEmailValidationTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.registration.UniqueEmailValidationTest@213deac2]" started-at="2021-08-04T00:01:38 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:01:40 EEST" duration-ms="1515" status="PASS">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.registration.UniqueEmailValidationTest@6d6cb754]" started-at="2021-08-09T13:04:41 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:04:44 EEST" duration-ms="2657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.registration.UniqueEmailValidationTest@213deac2]" started-at="2021-08-04T00:01:40 EEST" name="setup" finished-at="2021-08-04T00:01:41 EEST" duration-ms="1873" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.registration.UniqueEmailValidationTest@6d6cb754]" started-at="2021-08-09T13:04:44 EEST" name="setup" finished-at="2021-08-09T13:04:45 EEST" duration-ms="1264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="userCannotUseEmailTwice()[pri:0, instance:com.customertimes.test.hw4.registration.UniqueEmailValidationTest@213deac2]" started-at="2021-08-04T00:01:41 EEST" name="userCannotUseEmailTwice" finished-at="2021-08-04T00:01:46 EEST" duration-ms="4525" status="PASS">
+        <test-method signature="userCannotUseEmailTwice()[pri:0, instance:com.customertimes.test.hw4.registration.UniqueEmailValidationTest@6d6cb754]" started-at="2021-08-09T13:04:45 EEST" name="userCannotUseEmailTwice" finished-at="2021-08-09T13:04:49 EEST" duration-ms="3542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCannotUseEmailTwice -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.registration.UniqueEmailValidationTest@213deac2]" started-at="2021-08-04T00:01:46 EEST" name="afterClass" finished-at="2021-08-04T00:01:47 EEST" duration-ms="719" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.registration.UniqueEmailValidationTest@6d6cb754]" started-at="2021-08-09T13:04:49 EEST" name="afterClass" finished-at="2021-08-09T13:04:49 EEST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.customertimes.test.hw4.registration.UniqueEmailValidationTest -->
-      <class name="com.customertimes.test.hw4.login.LoginTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.login.LoginTest@23eee4b8]" started-at="2021-08-04T00:00:06 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:00:08 EEST" duration-ms="1631" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.login.LoginTest@23eee4b8]" started-at="2021-08-04T00:00:08 EEST" name="setup" finished-at="2021-08-04T00:00:11 EEST" duration-ms="3277" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="userCanLoginToJuiceShop()[pri:0, instance:com.customertimes.test.hw4.login.LoginTest@23eee4b8]" started-at="2021-08-04T00:00:11 EEST" name="userCanLoginToJuiceShop" finished-at="2021-08-04T00:00:13 EEST" duration-ms="2063" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userCanLoginToJuiceShop -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.login.LoginTest@23eee4b8]" started-at="2021-08-04T00:00:13 EEST" name="afterClass" finished-at="2021-08-04T00:00:14 EEST" duration-ms="1079" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.customertimes.test.hw4.login.LoginTest -->
       <class name="com.customertimes.test.hw4.registration.PasswordMatchingValidationTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.registration.PasswordMatchingValidationTest@49096b06]" started-at="2021-08-04T00:00:23 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:00:25 EEST" duration-ms="1450" status="PASS">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.registration.PasswordMatchingValidationTest@17d238b1]" started-at="2021-08-09T13:03:25 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:03:27 EEST" duration-ms="2242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.registration.PasswordMatchingValidationTest@49096b06]" started-at="2021-08-04T00:00:25 EEST" name="setup" finished-at="2021-08-04T00:00:26 EEST" duration-ms="1862" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.registration.PasswordMatchingValidationTest@17d238b1]" started-at="2021-08-09T13:03:27 EEST" name="setup" finished-at="2021-08-09T13:03:28 EEST" duration-ms="1026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="userPasswordsMatched()[pri:0, instance:com.customertimes.test.hw4.registration.PasswordMatchingValidationTest@49096b06]" started-at="2021-08-04T00:00:26 EEST" name="userPasswordsMatched" finished-at="2021-08-04T00:00:30 EEST" duration-ms="4065" status="PASS">
+        <test-method signature="userPasswordsMatched()[pri:0, instance:com.customertimes.test.hw4.registration.PasswordMatchingValidationTest@17d238b1]" started-at="2021-08-09T13:03:28 EEST" name="userPasswordsMatched" finished-at="2021-08-09T13:03:30 EEST" duration-ms="2400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userPasswordsMatched -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.registration.PasswordMatchingValidationTest@49096b06]" started-at="2021-08-04T00:00:30 EEST" name="afterClass" finished-at="2021-08-04T00:00:31 EEST" duration-ms="770" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.registration.PasswordMatchingValidationTest@17d238b1]" started-at="2021-08-09T13:03:30 EEST" name="afterClass" finished-at="2021-08-09T13:03:31 EEST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.customertimes.test.hw4.registration.PasswordMatchingValidationTest -->
-      <class name="com.customertimes.test.hw4.registration.EmailValidationTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@27e32fe4]" started-at="2021-08-03T23:59:53 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-03T23:59:57 EEST" duration-ms="3909" status="PASS">
+      <class name="com.customertimes.test.hw4.login.LoginTest">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.login.LoginTest@6b7d1df8]" started-at="2021-08-09T13:03:12 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:03:14 EEST" duration-ms="2769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@27e32fe4]" started-at="2021-08-03T23:59:57 EEST" name="setup" finished-at="2021-08-04T00:00:00 EEST" duration-ms="2887" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.login.LoginTest@6b7d1df8]" started-at="2021-08-09T13:03:14 EEST" name="setup" finished-at="2021-08-09T13:03:16 EEST" duration-ms="1275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="userCannotProvideInvalidEmail()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@27e32fe4]" started-at="2021-08-04T00:00:00 EEST" name="userCannotProvideInvalidEmail" finished-at="2021-08-04T00:00:04 EEST" duration-ms="4663" status="PASS">
+        <test-method signature="userCanLoginToJuiceShop()[pri:0, instance:com.customertimes.test.hw4.login.LoginTest@6b7d1df8]" started-at="2021-08-09T13:03:16 EEST" name="userCanLoginToJuiceShop" finished-at="2021-08-09T13:03:17 EEST" duration-ms="1442" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCannotProvideInvalidEmail -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@27e32fe4]" started-at="2021-08-04T00:00:05 EEST" name="afterClass" finished-at="2021-08-04T00:00:06 EEST" duration-ms="1362" status="PASS">
+        </test-method> <!-- userCanLoginToJuiceShop -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.login.LoginTest@6b7d1df8]" started-at="2021-08-09T13:03:17 EEST" name="afterClass" finished-at="2021-08-09T13:03:17 EEST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@27e32fe4]" started-at="2021-08-04T00:01:55 EEST" name="tearDown" finished-at="2021-08-04T00:01:55 EEST" duration-ms="1" status="PASS">
+      </class> <!-- com.customertimes.test.hw4.login.LoginTest -->
+      <class name="com.customertimes.test.hw4.registration.EmailValidationTest">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@5b6e8f77]" started-at="2021-08-09T13:02:48 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:03:01 EEST" duration-ms="13417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassInTheBaseTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@5b6e8f77]" started-at="2021-08-09T13:03:01 EEST" name="setup" finished-at="2021-08-09T13:03:08 EEST" duration-ms="6880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="userCannotProvideInvalidEmail()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@5b6e8f77]" started-at="2021-08-09T13:03:08 EEST" name="userCannotProvideInvalidEmail" finished-at="2021-08-09T13:03:11 EEST" duration-ms="2979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCannotProvideInvalidEmail -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@5b6e8f77]" started-at="2021-08-09T13:03:11 EEST" name="afterClass" finished-at="2021-08-09T13:03:12 EEST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.customertimes.test.hw4.registration.EmailValidationTest@5b6e8f77]" started-at="2021-08-09T13:04:57 EEST" name="tearDown" finished-at="2021-08-09T13:04:57 EEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.customertimes.test.hw4.registration.EmailValidationTest -->
       <class name="com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest@400d912a]" started-at="2021-08-04T00:01:47 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:01:49 EEST" duration-ms="1776" status="PASS">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest@143d9a93]" started-at="2021-08-09T13:04:49 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:04:53 EEST" duration-ms="3864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest@400d912a]" started-at="2021-08-04T00:01:49 EEST" name="setup" finished-at="2021-08-04T00:01:50 EEST" duration-ms="1877" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest@143d9a93]" started-at="2021-08-09T13:04:53 EEST" name="setup" finished-at="2021-08-09T13:04:54 EEST" duration-ms="1173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="userCannotUseIncorrectCredentials()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest@400d912a]" started-at="2021-08-04T00:01:50 EEST" name="userCannotUseIncorrectCredentials" finished-at="2021-08-04T00:01:53 EEST" duration-ms="2740" status="FAIL">
+        <test-method signature="userCannotUseIncorrectCredentials()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest@143d9a93]" started-at="2021-08-09T13:04:54 EEST" name="userCannotUseIncorrectCredentials" finished-at="2021-08-09T13:04:56 EEST" duration-ms="1961" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Incorrect credentials validation doesn't work correctly expected [Invalid email or password] but found [Invalid email or password.]]]>
@@ -341,28 +341,30 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCannotUseIncorrectCredentials -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest@400d912a]" started-at="2021-08-04T00:01:53 EEST" name="afterClass" finished-at="2021-08-04T00:01:54 EEST" duration-ms="755" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest@143d9a93]" started-at="2021-08-09T13:04:56 EEST" name="afterClass" finished-at="2021-08-09T13:04:56 EEST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest -->
       <class name="com.customertimes.test.hw5.AddProductToBasketTest">
-        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw5.AddProductToBasketTest@9f6e406]" started-at="2021-08-04T00:00:14 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-04T00:00:16 EEST" duration-ms="1377" status="PASS">
+        <test-method is-config="true" signature="beforeClassInTheBaseTest()[pri:0, instance:com.customertimes.test.hw5.AddProductToBasketTest@40226788]" started-at="2021-08-09T13:03:17 EEST" name="beforeClassInTheBaseTest" finished-at="2021-08-09T13:03:20 EEST" duration-ms="3092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTheBaseTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw5.AddProductToBasketTest@9f6e406]" started-at="2021-08-04T00:00:16 EEST" name="setup" finished-at="2021-08-04T00:00:18 EEST" duration-ms="1844" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.customertimes.test.hw5.AddProductToBasketTest@40226788]" started-at="2021-08-09T13:03:20 EEST" name="setup" finished-at="2021-08-09T13:03:22 EEST" duration-ms="1456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="userCanAddProductToBasket()[pri:0, instance:com.customertimes.test.hw5.AddProductToBasketTest@9f6e406]" started-at="2021-08-04T00:00:18 EEST" name="userCanAddProductToBasket" finished-at="2021-08-04T00:00:22 EEST" duration-ms="4084" status="FAIL">
+        <test-method signature="userCanAddProductToBasket()[pri:0, instance:com.customertimes.test.hw5.AddProductToBasketTest@40226788]" started-at="2021-08-09T13:03:22 EEST" name="userCanAddProductToBasket" finished-at="2021-08-09T13:03:24 EEST" duration-ms="2507" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
+The product doesn't match expected [Apple Juice (1000ml)] but found [Apple Pomace],
 The quantity doesn't match expected [1] but found [2]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
+The product doesn't match expected [Apple Juice (1000ml)] but found [Apple Pomace],
 The quantity doesn't match expected [1] but found [2]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
@@ -404,7 +406,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanAddProductToBasket -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw5.AddProductToBasketTest@9f6e406]" started-at="2021-08-04T00:00:22 EEST" name="afterClass" finished-at="2021-08-04T00:00:23 EEST" duration-ms="1022" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.customertimes.test.hw5.AddProductToBasketTest@40226788]" started-at="2021-08-09T13:03:25 EEST" name="afterClass" finished-at="2021-08-09T13:03:25 EEST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

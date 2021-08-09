@@ -21,7 +21,7 @@ public class LoginTest extends BaseTest {
     public void setup() {
         driver.get(TestConfig.CONFIG.baseUrl());
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        customer = Customer.newBuilder().withName("omeleshko56@gmail.com").withPassword("22334455Le+").build();
+        customer = Customer.newBuilder().withName("omeleshko57@gmail.com").withPassword("22334455Le+").build();
         loginPage = new LoginPage(driver);
     }
 

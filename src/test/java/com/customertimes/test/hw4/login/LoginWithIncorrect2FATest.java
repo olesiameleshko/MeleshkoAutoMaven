@@ -28,7 +28,7 @@ public class LoginWithIncorrect2FATest extends BaseTest {
     public void setup() {
         driver.get(TestConfig.CONFIG.baseUrl());
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        customer = Customer.newBuilder().withName("omeleshko56@gmail.com").withPassword("22334455Le+").withTwoFA(incorrect2FACode).build();
+        customer = Customer.newBuilder().withName("omeleshko57@gmail.com").withPassword("22334455Le+").withTwoFA(incorrect2FACode).build();
         loginPageFactory = new LoginPageFactory(driver);
         twoFactorAuthenticationPage = new TwoFactorAuthenticationPage(driver);
     }

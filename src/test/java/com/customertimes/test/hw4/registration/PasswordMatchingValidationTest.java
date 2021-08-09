@@ -27,7 +27,7 @@ public class PasswordMatchingValidationTest extends BaseTest {
     public void setup() {
         driver.get(TestConfig.CONFIG.baseUrl());
         driver.findElement(By.cssSelector("button[aria-label='Close Welcome Banner']")).click();
-        customer = Customer.newBuilder().withName("omeleshko32@gmail.com").withPassword("22334455Le+").build();
+        customer = Customer.newBuilder().withName("omeleshko57@gmail.com").withPassword("22334455Le+").build();
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);
     }

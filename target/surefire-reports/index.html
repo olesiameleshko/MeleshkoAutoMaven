@@ -104,12 +104,12 @@
                     <div class="method-list-content failed suite-Regression_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="com.customertimes.test.hw5.AddProductToBasketTest" class="method navigator-link" hash-for-method="userCanAddProductToBasket">userCanAddProductToBasket</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.customertimes.test.hw5.ProductInfoTest" class="method navigator-link" hash-for-method="productInfoMatchingTest">productInfoMatchingTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest" class="method navigator-link" hash-for-method="userCannotAddSoldOutProductToBasket">userCannotAddSoldOutProductToBasket</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.customertimes.test.hw5.AddProductToBasketTest" class="method navigator-link" hash-for-method="userCanAddProductToBasket">userCanAddProductToBasket</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,17 +133,17 @@
                     <div class="method-list-content passed suite-Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="com.customertimes.test.hw5.ProductInfoTest" class="method navigator-link" hash-for-method="productInfoMatchingTest">productInfoMatchingTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Regression_Suite" title="com.customertimes.test.hw4.login.LoginTest" class="method navigator-link" hash-for-method="userCanLoginToJuiceShop">userCanLoginToJuiceShop</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Regression_Suite" title="com.customertimes.test.hw4.registration.RegistrationTest" class="method navigator-link" hash-for-method="userCanRegisterToJuicyShop">userCanRegisterToJuicyShop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest" class="method navigator-link" hash-for-method="userCannotAddSoldOutProductToBasket">userCannotAddSoldOutProductToBasket</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -181,56 +181,6 @@
           <div class="suite-Regression_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.customertimes.test.hw4.login.LoginWithIncorrect2FATest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="userCannotLoginWithIncorrect2FA">
-                  </a> <!-- userCannotLoginWithIncorrect2FA -->
-                  <span class="method-name">userCannotLoginWithIncorrect2FA</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.id: totpToken (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-B5CJTOK&apos;, ip: &apos;172.21.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 30e153f7eed053e04ef5cedf66c43a03
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.customertimes.framework.pages.AbstractPage.getElement(AbstractPage.java:24)
-	at com.customertimes.framework.pages.TwoFactorAuthenticationPage.enter2FA(TwoFactorAuthenticationPage.java:30)
-	at com.customertimes.test.hw4.login.LoginWithIncorrect2FATest.userCannotLoginWithIncorrect2FA(LoginWithIncorrect2FATest.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Suite-class-failed -->
-          <div class="suite-Regression_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.customertimes.test.hw5.AddProductToBasketTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="userCanAddProductToBasket">
-                  </a> <!-- userCanAddProductToBasket -->
-                  <span class="method-name">userCanAddProductToBasket</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	The quantity doesn&apos;t match expected [1] but found [2]
-	at com.customertimes.test.hw5.AddProductToBasketTest.userCanAddProductToBasket(AddProductToBasketTest.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Suite-class-failed -->
-          <div class="suite-Regression_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -251,25 +201,76 @@ Session ID: 30e153f7eed053e04ef5cedf66c43a03
           <div class="suite-Regression_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest</span>
+              <span class="class-name">com.customertimes.test.hw5.AddProductToBasketTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userCannotAddSoldOutProductToBasket">
-                  </a> <!-- userCannotAddSoldOutProductToBasket -->
-                  <span class="method-name">userCannotAddSoldOutProductToBasket</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: button[aria-label=&apos;Next page&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+                  <a name="userCanAddProductToBasket">
+                  </a> <!-- userCanAddProductToBasket -->
+                  <span class="method-name">userCanAddProductToBasket</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	The product doesn&apos;t match expected [Apple Juice (1000ml)] but found [Apple Pomace],
+	The quantity doesn&apos;t match expected [1] but found [2]
+	at com.customertimes.test.hw5.AddProductToBasketTest.userCanAddProductToBasket(AddProductToBasketTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.customertimes.test.hw4.login.LoginWithIncorrect2FATest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userCannotLoginWithIncorrect2FA">
+                  </a> <!-- userCannotLoginWithIncorrect2FA -->
+                  <span class="method-name">userCannotLoginWithIncorrect2FA</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.id: totpToken (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-B5CJTOK&apos;, ip: &apos;172.21.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Olesia\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 04d4b0b36b8518260769089b43bda437
+System info: host: &apos;DESKTOP-B5CJTOK&apos;, ip: &apos;172.29.128.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.yvtPv7}, goog:chromeOptions: {debuggerAddress: localhost:36873}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fdacefe8cab5c9af353993545a9d104
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at com.customertimes.framework.pages.AbstractPage.getElement(AbstractPage.java:24)
-	at com.customertimes.framework.pages.AllProductsPage.navigateToNextPageUsingScroll(AllProductsPage.java:82)
-	at com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest.userCannotAddSoldOutProductToBasket(NoAbilityToAddSoldOutProductTest.java:43)
+	at com.customertimes.framework.pages.TwoFactorAuthenticationPage.enter2FA(TwoFactorAuthenticationPage.java:30)
+	at com.customertimes.test.hw4.login.LoginWithIncorrect2FATest.userCannotLoginWithIncorrect2FA(LoginWithIncorrect2FATest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.customertimes.test.hw5.ProductInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productInfoMatchingTest">
+                  </a> <!-- productInfoMatchingTest -->
+                  <span class="method-name">productInfoMatchingTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: .mat-dialog-content p:only-child (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-B5CJTOK&apos;, ip: &apos;172.29.128.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.vwIv4s}, goog:chromeOptions: {debuggerAddress: localhost:36447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e85a648f901517bffcbce2985ae6e51
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.customertimes.framework.pages.AbstractPage.getElement(AbstractPage.java:24)
+	at com.customertimes.framework.pages.AllProductsPage.getProductPrice(AllProductsPage.java:69)
+	at com.customertimes.test.hw5.ProductInfoTest.productInfoMatchingTest(ProductInfoTest.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
@@ -280,44 +281,14 @@ Session ID: 04d4b0b36b8518260769089b43bda437
           <div class="suite-Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.customertimes.test.hw4.registration.UniqueEmailValidationTest</span>
+              <span class="class-name">com.customertimes.test.hw4.login.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userCannotUseEmailTwice">
-                  </a> <!-- userCannotUseEmailTwice -->
-                  <span class="method-name">userCannotUseEmailTwice</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Suite-class-passed -->
-          <div class="suite-Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.customertimes.test.hw4.registration.EmailValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="userCannotProvideInvalidEmail">
-                  </a> <!-- userCannotProvideInvalidEmail -->
-                  <span class="method-name">userCannotProvideInvalidEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Suite-class-passed -->
-          <div class="suite-Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="userCannotLoginWithoutPassword">
-                  </a> <!-- userCannotLoginWithoutPassword -->
-                  <span class="method-name">userCannotLoginWithoutPassword</span>
+                  <a name="userCanLoginToJuiceShop">
+                  </a> <!-- userCanLoginToJuiceShop -->
+                  <span class="method-name">userCanLoginToJuiceShop</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -340,14 +311,29 @@ Session ID: 04d4b0b36b8518260769089b43bda437
           <div class="suite-Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.customertimes.test.hw4.login.LoginTest</span>
+              <span class="class-name">com.customertimes.test.hw4.registration.UniqueEmailValidationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userCanLoginToJuiceShop">
-                  </a> <!-- userCanLoginToJuiceShop -->
-                  <span class="method-name">userCanLoginToJuiceShop</span>
+                  <a name="userCannotUseEmailTwice">
+                  </a> <!-- userCannotUseEmailTwice -->
+                  <span class="method-name">userCannotUseEmailTwice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userCannotAddSoldOutProductToBasket">
+                  </a> <!-- userCannotAddSoldOutProductToBasket -->
+                  <span class="method-name">userCannotAddSoldOutProductToBasket</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -370,14 +356,29 @@ Session ID: 04d4b0b36b8518260769089b43bda437
           <div class="suite-Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.customertimes.test.hw5.ProductInfoTest</span>
+              <span class="class-name">com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="productInfoMatchingTest">
-                  </a> <!-- productInfoMatchingTest -->
-                  <span class="method-name">productInfoMatchingTest</span>
+                  <a name="userCannotLoginWithoutPassword">
+                  </a> <!-- userCannotLoginWithoutPassword -->
+                  <span class="method-name">userCannotLoginWithoutPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.customertimes.test.hw4.registration.EmailValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userCannotProvideInvalidEmail">
+                  </a> <!-- userCannotProvideInvalidEmail -->
+                  <span class="method-name">userCannotProvideInvalidEmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -456,52 +457,52 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'userCannotLoginWithIncorrect2FA')
 data.setCell(0, 2, 'com.customertimes.test.hw4.login.LoginWithIncorrect2FATest')
-data.setCell(0, 3, 14647);
+data.setCell(0, 3, 11707);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'userCannotAddSoldOutProductToBasket')
-data.setCell(1, 2, 'com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest')
-data.setCell(1, 3, 14161);
+data.setCell(1, 1, 'productInfoMatchingTest')
+data.setCell(1, 2, 'com.customertimes.test.hw5.ProductInfoTest')
+data.setCell(1, 3, 11155);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'userCanRegisterToJuicyShop')
 data.setCell(2, 2, 'com.customertimes.test.hw4.registration.RegistrationTest')
-data.setCell(2, 3, 6994);
+data.setCell(2, 3, 5171);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'userCannotProvideInvalidEmail')
-data.setCell(3, 2, 'com.customertimes.test.hw4.registration.EmailValidationTest')
-data.setCell(3, 3, 4663);
+data.setCell(3, 1, 'userCannotAddSoldOutProductToBasket')
+data.setCell(3, 2, 'com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest')
+data.setCell(3, 3, 4877);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'userCannotUseEmailTwice')
 data.setCell(4, 2, 'com.customertimes.test.hw4.registration.UniqueEmailValidationTest')
-data.setCell(4, 3, 4525);
+data.setCell(4, 3, 3542);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'userCanAddProductToBasket')
-data.setCell(5, 2, 'com.customertimes.test.hw5.AddProductToBasketTest')
-data.setCell(5, 3, 4084);
+data.setCell(5, 1, 'userCannotProvideInvalidEmail')
+data.setCell(5, 2, 'com.customertimes.test.hw4.registration.EmailValidationTest')
+data.setCell(5, 3, 2979);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'userPasswordsMatched')
-data.setCell(6, 2, 'com.customertimes.test.hw4.registration.PasswordMatchingValidationTest')
-data.setCell(6, 3, 4065);
+data.setCell(6, 1, 'userCanAddProductToBasket')
+data.setCell(6, 2, 'com.customertimes.test.hw5.AddProductToBasketTest')
+data.setCell(6, 3, 2507);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'userCannotLoginWithoutPassword')
-data.setCell(7, 2, 'com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest')
-data.setCell(7, 3, 2757);
+data.setCell(7, 1, 'userPasswordsMatched')
+data.setCell(7, 2, 'com.customertimes.test.hw4.registration.PasswordMatchingValidationTest')
+data.setCell(7, 3, 2400);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'userCannotUseIncorrectCredentials')
 data.setCell(8, 2, 'com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest')
-data.setCell(8, 3, 2740);
+data.setCell(8, 3, 1961);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'userCanLoginToJuiceShop')
 data.setCell(9, 2, 'com.customertimes.test.hw4.login.LoginTest')
-data.setCell(9, 3, 2063);
+data.setCell(9, 3, 1442);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'productInfoMatchingTest')
-data.setCell(10, 2, 'com.customertimes.test.hw5.ProductInfoTest')
-data.setCell(10, 3, 2011);
+data.setCell(10, 1, 'userCannotLoginWithoutPassword')
+data.setCell(10, 2, 'com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest')
+data.setCell(10, 3, 1111);
 window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Regression_Suite">
               </div> <!-- times-div-Regression_Suite -->
             </div> <!-- times-div -->
@@ -520,27 +521,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.customertimes.test.hw4.registration.UniqueEmailValidationTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.customertimes.test.hw4.login.LoginWithIncorrect2FATest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">com.customertimes.test.hw5.AddProductToBasketTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
@@ -555,7 +535,21 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.customertimes.test.hw4.login.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.customertimes.test.hw4.registration.RegistrationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.customertimes.test.hw4.registration.UniqueEmailValidationTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -569,13 +563,6 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.customertimes.test.hw4.login.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">com.customertimes.test.hw4.registration.PasswordMatchingValidationTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
@@ -583,7 +570,21 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.customertimes.test.hw4.login.LoginWithIncorrect2FATest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.customertimes.test.hw5.ProductInfoTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -604,220 +605,220 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3920 ms</span>
+                <span class="method-start">13420 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">userCannotProvideInvalidEmail</span>
-                <span class="method-start">6881 ms</span>
+                <span class="method-start">20355 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">11946 ms</span>
+                <span class="method-start">23673 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw4.login.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">13314 ms</span>
+                <span class="method-start">23763 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">14945 ms</span>
+                <span class="method-start">26533 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">userCanLoginToJuiceShop</span>
-                <span class="method-start">18223 ms</span>
+                <span class="method-start">27810 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">20479 ms</span>
+                <span class="method-start">29350 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw5.AddProductToBasketTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">21558 ms</span>
+                <span class="method-start">29458 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">22935 ms</span>
+                <span class="method-start">32550 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">userCanAddProductToBasket</span>
-                <span class="method-start">24780 ms</span>
+                <span class="method-start">34007 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">29158 ms</span>
+                <span class="method-start">36884 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw4.registration.PasswordMatchingValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">30181 ms</span>
+                <span class="method-start">36992 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">31631 ms</span>
+                <span class="method-start">39234 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">userPasswordsMatched</span>
-                <span class="method-start">33494 ms</span>
+                <span class="method-start">40261 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">37566 ms</span>
+                <span class="method-start">42666 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw4.login.LoginWithEmptyPasswordTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">38337 ms</span>
+                <span class="method-start">42780 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">39768 ms</span>
+                <span class="method-start">45339 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">userCannotLoginWithoutPassword</span>
-                <span class="method-start">42125 ms</span>
+                <span class="method-start">48497 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">44886 ms</span>
+                <span class="method-start">49613 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw5.NoAbilityToAddSoldOutProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">45684 ms</span>
+                <span class="method-start">49670 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">47324 ms</span>
+                <span class="method-start">54859 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">userCannotAddSoldOutProductToBasket</span>
-                <span class="method-start">49047 ms</span>
+                <span class="method-start">57019 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">63440 ms</span>
+                <span class="method-start">61919 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw4.registration.RegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">64363 ms</span>
+                <span class="method-start">61983 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">65785 ms</span>
+                <span class="method-start">66090 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">userCanRegisterToJuicyShop</span>
-                <span class="method-start">67874 ms</span>
+                <span class="method-start">67970 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">75048 ms</span>
+                <span class="method-start">73273 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw4.login.LoginWithIncorrect2FATest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">76939 ms</span>
+                <span class="method-start">73333 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">78709 ms</span>
+                <span class="method-start">75896 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">userCannotLoginWithIncorrect2FA</span>
-                <span class="method-start">81845 ms</span>
+                <span class="method-start">82574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">96994 ms</span>
+                <span class="method-start">96396 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw5.ProductInfoTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">97814 ms</span>
+                <span class="method-start">96728 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">100053 ms</span>
+                <span class="method-start">99580 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">productInfoMatchingTest</span>
-                <span class="method-start">102353 ms</span>
+                <span class="method-start">101816 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">104367 ms</span>
+                <span class="method-start">113330 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw4.registration.UniqueEmailValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">105199 ms</span>
+                <span class="method-start">113390 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">106714 ms</span>
+                <span class="method-start">116047 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">userCannotUseEmailTwice</span>
-                <span class="method-start">108588 ms</span>
+                <span class="method-start">117312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">113117 ms</span>
+                <span class="method-start">120859 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw4.login.LoginWithIncorrectCredentialsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassInTheBaseTest</span>
-                <span class="method-start">113837 ms</span>
+                <span class="method-start">120918 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">115613 ms</span>
+                <span class="method-start">124782 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">userCannotUseIncorrectCredentials</span>
-                <span class="method-start">117491 ms</span>
+                <span class="method-start">125955 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">120513 ms</span>
+                <span class="method-start">128298 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.customertimes.test.hw4.registration.EmailValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">121755 ms</span>
+                <span class="method-start">128897 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
