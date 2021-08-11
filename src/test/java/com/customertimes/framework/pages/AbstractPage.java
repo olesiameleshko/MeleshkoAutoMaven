@@ -29,6 +29,10 @@ public abstract class AbstractPage {
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator1));
         return driver.findElement(locator1);
     }
+    public WebElement getElementIfClickable(By locator2) {
+        wait.until(ExpectedConditions.elementToBeClickable(locator2));
+        return driver.findElement(locator2);
+    }
 }
 
 

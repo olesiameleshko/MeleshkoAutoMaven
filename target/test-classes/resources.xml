@@ -7,8 +7,8 @@
     <test name="Regression">
         <packages>
             <package name="com.customertimes.test.hw4.registration"/>
-            <package name="com.customertimes.test.hw4.login"/>
             <package name="com.customertimes.test.hw5"/>
+            <package name="com.customertimes.test.hw4.login"/>
         </packages>
     </test>
 </suite>
